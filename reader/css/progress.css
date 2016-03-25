@@ -1,0 +1,53 @@
+.progressbar { position:relative; width:100%; height:25px; -moz-box-sizing:border-box;
+  -webkit-box-sizing:border-box; box-sizing:border-box; -webkit-tap-highlight-color:rgba(0,0,0,0); }
+.progressbar .track { height:3px; background:#cbcbcb; cursor:pointer; position:absolute;
+  top:50%; margin-top:-2px; left:0; right:0; }
+.progressbar .progress { width:30%; height:3px; background:#ff501a; float:left; }
+.progressbar .dot { width:24px; height:25px; background:url('../images/dot.png') 5px 5px no-repeat; z-index:1;
+  float:left; margin-top:-10px; cursor:pointer; margin-left:-13px; margin-right:-13px; position:relative; }
+.progressbar .cache { position:absolute; left:0; bottom:0; width:0; height:1px; background:gray; }
+
+.progress-box { padding:0 7px; }
+.progress-box .progressbar .track { height:4px; background:#b5b6b7;
+  -webkit-border-radius:1px; -moz-border-radius:1px; border-radius:1px; }
+.progress-box .progressbar .progress { height:4px; background:#ff4d15;
+  -webkit-border-radius:1px; -moz-border-radius:1px; border-radius:1px; }
+.progress-box .progressbar .dot { width:18px; height:18px; margin-top:-7px;
+  margin-left:-9px; margin-right:-9px; background:#fff; z-index:2;
+  -webkit-border-radius:50%; -moz-border-radius:50%; border-radius:50%;
+  -webkit-box-shadow:0px 1px 5px 0px rgba(0, 0, 0, 0.5);
+  -moz-box-shadow:0px 1px 5px 0px rgba(0, 0, 0, 0.5);
+  box-shadow:0px 1px 5px 0px rgba(0, 0, 0, 0.5); }
+.progress-box .progressbar .dot:hover { -webkit-box-shadow:0px 0px 4px 1px rgba(255, 255, 255, 1);
+  -moz-box-shadow:0px 0px 4px 1px rgba(255, 255, 255, 1);
+  box-shadow:0px 0px 4px 1px rgba(255, 255, 255, 1); background:#ff4d15; }
+
+.disabled-row .progress-box .track, .disabled-row .progress-box .dot { cursor:auto; }
+.disabled-row .progress-box .progress { background:#b5b6b7 !important; }
+.disabled-row .progress-box .dot,
+.disabled-row .progress-box .dot:hover { -webkit-box-shadow: 0px 0px 4px 1px #333;
+  -moz-box-shadow: 0px 0px 4px 1px #333; box-shadow: 0px 0px 4px 1px #333; background:#b5b6b7 !important; }
+
+.progress-titles { color:#b5b6b7; font:10px/13px 'Arial'; width:100%; height:16px; }
+.progress-titles span { display:block; }
+.title-right { float:right; }
+.title-left { float:left; }
+
+.progressbar .track span { display:block; width:6px; height:6px; background:#fff;
+  -webkit-border-radius:50%; -moz-border-radius:50%; border-radius:50%; margin-top:-5px;
+  border:4px solid #b5b6b7; position:absolute; z-index:1; margin-left:-7px; margin-right:-7px; }
+.progressbar .track span.active { border-color:#ff4d15; }
+
+.chapter-box { width:340px; border:1px solid rgba(59, 56, 63, .4); display:none;
+  -webkit-box-shadow:0px 5px 10px rgba(59, 56, 63, .2), 0 1px 3px rgba(59, 56, 63, .2);
+  -moz-box-shadow:0px 5px 10px rgba(59, 56, 63, .2), 0 1px 3px rgba(59, 56, 63, .2);
+  box-shadow:0px 5px 10px rgba(59, 56, 63, .2), 0 1px 3px rgba(59, 56, 63, .2);
+  position:relative; left:0; top:-77px; background:#fff; }
+/*.chapter-box:before { display:block; content:""; width:0; height:0; position:absolute; left:50%; bottom:-15px;
+  border-left:16px solid transparent; border-right:16px solid transparent; border-top:15px solid #fff;
+  margin-left:-16px; z-index:2; }
+.chapter-box:after { display:block; content:""; width:0; height:0; position:absolute; left:50%; bottom:-16px;
+  border-left:17px solid transparent; border-right:17px solid transparent; border-top:16px solid rgba(59, 56, 63, .4);
+  margin-left:-17px; z-index:1; }*/
+.chapter-box p { white-space:nowrap; text-overflow:ellipsis; overflow:hidden; font:14px/22px 'Arial';
+  color:#3b393f; padding:20px; }

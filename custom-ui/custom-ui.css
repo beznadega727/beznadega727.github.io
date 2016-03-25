@@ -1,0 +1,145 @@
+.popup-form-toolbox td {padding: .2em .8em; vertical-align: middle !important; border: none; }
+.popup-form-toolbox td h2 {background: none; padding: 0 1em 0 0; font-size: 22px; color: #aaa; font-weight: normal; margin: 0; cursor: default;}
+
+#shadow {position: fixed; background: #000; width: 100%; height: 100%; opacity: 0.3; filter:progid:DXImageTransform.Microsoft.Alpha(opacity=30); left: 0px; top: 0px; z-index: 2000;}
+
+.popup-close-button {
+    /* border: 1px dotted red; */
+    /*style="font-size: 32px; padding: 0; margin: 0; line-height: 1em; min-width: 40px;"*/
+}
+
+.popup-toolbox-button {
+    font-size: 11pt;
+    text-align: center;
+    display: inline-block;
+    padding: 0em;
+    text-decoration: none;
+    color: #aaa;
+    cursor: pointer;
+    padding: 2px 4px;
+}
+.popup-toolbox-button:hover {
+    color: #5066a4;
+    text-decoration: none;
+}
+.popup-toolbox-button:focus {
+    text-decoration: none;
+}
+
+/*
+.rotating {
+    -webkit-transform: rotate(0deg);
+    -webkit-transition-duration: 1s;
+}
+
+.rotating:hover {
+    -moz-transform: rotate(90deg);
+    -moz-transition-duration: .5s;
+    -webkit-transform: rotate(90deg);
+    -webkit-transition-duration: .5s;
+    transform: rotate(90deg);
+    transition-duration: .5s;
+}
+*/
+
+/**
+* Всплывающая форма
+*/
+.popup-form {
+    position: absolute;
+    top: 320px;    
+    display: none;
+    padding: 0;
+    min-width: 300px;
+    border-radius: 2px;
+    background-color: #fff;
+    box-shadow: 4px 4px 32px #222;
+    -moz-box-shadow: 4px 4px 32px #222;
+    -webkit-box-shadow: 4px 4px 32px #222;
+    z-index: 3000;
+}
+
+/* .popup-form table td {padding: 4px;} */
+.popup-form input {padding: .2em; font-size: 14px; }
+.popup-form .popup-form-toolbox a { color: #09f; }
+
+.popup-window-error {border: .2em solid #f50; border-style: solid; background: #f5f0e0; }
+.popup-window-error .popup-form-toolbox {background: #d5d0c0;}
+.popup-window-error .popup-form-toolbox h2 {color: #f50; }
+
+.popup-form-footer {text-align: center;}
+
+.popup-form-footer {margin: 0px; border-top: 1px solid #ccc; padding: .8em; display: block; background: #eee;}
+.popup-form-footer { text-align: right;}
+.popup-form .popup-form-toolbox a { color: #ccc; font-size: 24px; }
+.popup-form .popup-form-toolbox a:hover { color: #999; }
+
+/**
+* Кнопки
+*/
+.popup-form-button {
+    opacity: .80;
+    -moz-opacity: .80;
+    -webkit-opacity: .80;
+    border: 1px solid #fff;
+    width: 24px;
+    height: 24px;
+    cursor: hand;
+    cursor:pointer;
+    display: inline-block;
+}
+
+.popup-form-button:hover {opacity: 1; border: 1px solid #fff;}
+.popup-form-button[disabled] {
+    opacity: .25;
+    -moz-opacity: .25;
+    -webkit-opacity: .25;
+    filter:progid:DXImageTransform.Microsoft.Alpha(opacity=25);
+}
+
+/**
+* Дерево
+*/
+.ui-nice-treeview li {list-style: none !important; margin-left: 24px !important; }
+.ui-nice-treeview li a { padding: 2px !important; border: 1px solid #fff; color: #313031; text-decoration: none; font-style: normal; line-height: 2em; font-size: 12px; cursor:hand; cursor:pointer; }
+.ui-nice-treeview li a:hover {background: #d3e5fb; border-radius: 7px; border: 1px solid #d3e5fb;}
+.ui-nice-treeview li a.selected {background: #bddbff; border-radius: 7px; border: 1px solid #bddbff;}
+.ui-nice-treeview li ul {/* display: none; */}
+.ui-nice-treeview li {text-indent: 17px; }
+.ui-nice-treeview li.active > a {background: #d3e5fb; border-radius: 7px; border: 1px solid #d3e5fb;}
+
+/**
+* Иконки
+*/
+/* .icon16 {display: inline-block; width: 16px; height: 16px;} */
+.icon16x20 {display: inline-block; width: 16px; height: 20px; }
+
+.iconlink {border: none !important;}
+.iconlink td {padding: 2px;}
+.iconlink td, .iconlink tr {border: none !important;}
+
+.hidden {display: none; }
+
+.popup-form-content {
+	font-size: 12pt;
+	overflow: auto;
+	padding: 1em;
+}
+
+.popup-close-button:hover {
+    text-decoration: none;
+}
+
+/* Сортировка */
+    [data-sort] {
+        padding-right: 10px;
+    }
+    [data-sort]:focus {
+        outline: none;
+    }
+    [data-sort-dir^="asc"] {
+        background: url(./sort.png) right 6px no-repeat;
+    }
+    [data-sort-dir^="desc"] {
+        background: url(./sort.png) right -490px no-repeat;
+    }

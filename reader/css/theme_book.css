@@ -1,0 +1,101 @@
+/*.book_theme .header { background:#17100A url('../images/theme/aldebaran/header.jpg') right top no-repeat; }*/
+.book_theme .logo { width:96px; -webkit-background-size:96px 14px; -moz-background-size:96px 14px;
+  -o-background-size:96px 14px; background-size:96px 14px;
+  background:url('../images/theme/aldebaran/logo.png') left bottom no-repeat; }
+
+.book_theme .top-menu i { background:url('../images/theme/aldebaran/top-menu.png') no-repeat;
+  background-image:url('../images/theme/aldebaran/top-menu.svg'), none; }
+
+.book_theme .top-menu span b { color:#5a7864; }
+.book_theme .top-menu li:hover span b { color:#5a7864 !important; }
+
+.book_theme .top-menu li span.menu-toc i { background-position:-8px 0px; }
+.book_theme .top-menu li span.menu-settings i { background-position:-41px -1px; }
+.book_theme .top-menu li span.menu-bookmark i { background-position:-144px -1px; }
+.book_theme .top-menu li span.menu-search i { background-position:-178px 0px; }
+.book_theme .top-menu li span.menu-help i { background-position:-211px 0px; }
+.book_theme .top-menu li span.menu-normalscreen i { background-position:-246px 0px; }
+.book_theme .top-menu li span.menu-fullscreen i { background-position:-280px 0px; }
+
+@media screen and (min-width:500px)  {
+  .book_theme .top-menu li.active span.menu-toc i { background-position:-8px -136px; }
+  .book_theme .top-menu li.active span.menu-settings i { background-position:-41px -137px; }
+  .book_theme .top-menu li.active span.menu-bookmark i { background-position:-144px -137px; }
+  .book_theme .top-menu li.active span.menu-search i { background-position:-178px -136px; }
+  .book_theme .top-menu li.active span.menu-help i { background-position:-211px -136px; }
+  .book_theme .top-menu li.active span.menu-normalscreen i { background-position:-246px -136px; }
+  .book_theme .top-menu li.active span.menu-fullscreen i { background-position:-280px -136px; }
+}
+
+.book_theme .progressbar .progress { background:#5a7864; }
+.book_theme .progressbar .dot { background-image:url('../images/theme/aldebaran/dot.png'); }
+.book_theme .progress-box .progressbar .dot { background:#fff; }
+.book_theme .progress-box .progressbar .progress { background:#5a7864; }
+.book_theme .progress-box .progressbar .dot:hover { background:#5a7864; }
+.book_theme .progressbar .track span.active { border-color:#5a7864; }
+
+.book_theme p.my_selec_1_default,
+.book_theme div.my_selec_1_default,
+.book_theme img.my_selec_1_default,
+.book_theme em.my_selec_1_default,
+.book_theme .tag_title.my_selec_1_default,
+.book_theme .tag_subtitle.my_selec_1_default { border-left:3px solid #5a7864; }
+
+.book_theme .icon-type { background:url('../images/theme/aldebaran/icon-bookmark.png') no-repeat;
+  background-image: url('../images/theme/aldebaran/icon-bookmark.svg'), none; }
+
+.book_theme .contents li a:hover, .book_theme .contents li a:hover span { color:#5a7864; }
+
+.book_theme .bookmarks li a:hover { color:#5a7864; }
+.book_theme .action-icon { background:url('../images/theme/aldebaran/bookmarks-sprite.png') no-repeat;
+  background-image:url('../images/theme/aldebaran/bookmarks-sprite.svg'), none; }
+.book_theme .bookmark-menu button:hover { color:#5a7864; }
+
+.book_theme #add-bookmark { display: none; background-image:url('../images/theme/aldebaran/button-bookmark.png'); }
+
+.book_theme .font-row:hover, .book_theme .font-current-row:hover { color:#5a7864; }
+
+.book_theme .checkbox-block label:hover { color:#5a7864; }
+
+.book_theme .more-button:hover { color:#5a7864; }
+
+.book_theme.night_theme .overlay button:hover { color:#5a7864; }
+
+.book_theme .settings .icon { background:url('../images/theme/aldebaran/settings/sprite-icons.png');
+  background-image:url('../images/theme/aldebaran/settings/sprite-icons.svg'), none; }
+.book_theme .checkbox-block label:before { background:url('../images/theme/aldebaran/settings/sprite-icons.png');
+  background-image:url('../images/theme/aldebaran/settings/sprite-icons.svg'), none; }
+
+.book_theme .buy-box { background:#5a7864; }
+.book_theme #buy-book { color:#5a7864; }
+
+.book_theme #enable-click { display:none; }
+
+/* pda stuff */
+.pda .logo { width:96px; height:40px; margin-top:0; -webkit-background-size:96px 14px; -moz-background-size:96px 14px;
+  -o-background-size:96px 14px; background-size:96px 14px;
+  background:url('../images/theme/aldebaran/logo.png') left 15px no-repeat; }
+.pda.night_top .logo { background:url('../images/theme/aldebaran/logo.png') left 15px no-repeat; }
+
+/* pda menu */
+.pda .top-menu li span { border-color:#fff; }
+.pda .top-menu li.active span { border-color:#5a7864; }
+
+.pda .top-menu li.active span.menu-toc i { background-position:-8px -34px !important; }
+.pda .top-menu li.active span.menu-settings i { background-position:-41px -35px !important; }
+.pda .top-menu li.active span.menu-bookmark i { background-position:-144px -35px !important; }
+.pda .top-menu li.active span.menu-search i { background-position:-178px -34px !important; }
+.pda .top-menu li.active span.menu-help i { background-position:-211px -34px !important; }
+.pda .top-menu li.active span.menu-normalscreen i { background-position:-246px -34px !important; }
+.pda .top-menu li.active span.menu-fullscreen i { background-position:-280px -34px !important; }
+
+.book_theme .bottom-arrows a { opacity:1; }
+.book_theme.night_theme .bottom-arrows a span {
+  background-image:url('../images/nav-arrows-white.png');
+  background-image:url('../images/nav-arrows-white.svg'), none;
+}
+
+.book_theme .bottom-arrows a:hover span {
+  background-image:url('../images/nav-arrows-pink.png');
+  background-image:url('../images/nav-arrows-pink.svg'), none;
+}
