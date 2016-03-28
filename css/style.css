@@ -2,6 +2,8 @@
 @import url(https://fonts.googleapis.com/css?family=Roboto:400,500,300,700,100);
 body {
   color: #000000;
+  display: none;
+  background-color: #f4f8f7;
 }
 p,
 span,
@@ -71,9 +73,12 @@ header .container_full {
 }
 .kab_btn {
   z-index: 1;
+  padding: 0;
 }
 .link_nav_head {
+  margin-left: 70px;
   z-index: 1;
+  float: right;
 }
 .link_nav_head .nav_link_header {
   z-index: 1;
@@ -87,6 +92,10 @@ header .container_full {
 .content_bl {
   padding-left: 80px;
 }
+.title_video {
+  margin-top: 30px;
+  margin-left: 60px;
+}
 .left_menu_nav {
   z-index: 2;
 }
@@ -96,26 +105,28 @@ header .container_full {
 .glyphicon-chevron-left:before {
   content: "";
   background: url("../img/arrow_slide_left.png") no-repeat;
-  width: 18px;
-  height: 41px;
+  width: 15px;
+  height: 75px;
   position: absolute;
   left: 0;
   right: 0;
   top: -8px;
   margin: auto;
   bottom: 0;
+  background-size: cover;
 }
 .glyphicon-chevron-right:before {
   content: "";
   background: url("../img/arrow_slide_right.png") no-repeat;
-  width: 18px;
-  height: 41px;
+  width: 15px;
+  height: 75px;
   position: absolute;
   left: 8px;
   right: 0;
   top: -8px;
   margin: auto;
   bottom: 0;
+  background-size: cover;
 }
 @media screen and (-webkit-min-device-pixel-ratio: 0) {
   .slider_grid .carousel-control .glyphicon::before {
@@ -232,9 +243,11 @@ header .container_full {
   margin-left: -500px;
   display: none;
   position: absolute;
-  left: 105px;
+  left: 82px;
   top: 91px;
   z-index: 1;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.41);
+  padding-left: 35px;
 }
 #search_bl.active {
   display: inline-block;
@@ -251,6 +264,7 @@ header .container_full {
   width: 0;
   outline: none;
   text-align: left;
+  max-width: 220px;
   /* Firefox 19+ */
   /* Firefox 18- */
 }
@@ -382,7 +396,7 @@ header .container_full {
   position: fixed;
   height: 100%;
   width: 80px;
-  background-color: #ffffff;
+  background-color: #f4f8f7;
   z-index: 15;
   overflow-y: auto;
   border-right: 2px solid #efefef;
@@ -771,8 +785,10 @@ footer h4 {
   top: 180px;
 }
 .carousel_slide_top h1 {
+  margin-top: 10px;
   margin-bottom: 15px;
   text-shadow: none;
+  line-height: 55px;
 }
 .carousel_slide_top p {
   font-size: 20px;
@@ -815,7 +831,8 @@ footer h4 {
   border-radius: 50%;
   top: 0;
   bottom: 0;
-  background-color: rgba(0, 0, 0, 0.65);
+  background-color: transparent;
+  background-image: none;
   margin: auto;
   right: 14%;
   -webkit-transition: all 0.3s;
@@ -881,7 +898,7 @@ footer h4 {
   top: 0;
   left: 0;
   text-align: left;
-  padding: 95px 40px 0;
+  padding: 95px 65px 0;
   right: 0;
 }
 .slider_grid .carousel-caption p {
@@ -899,10 +916,10 @@ footer h4 {
   color: #ffffff;
 }
 .slider_grid:hover .carousel-control.left {
-  left: 5%;
+  left: 2%;
 }
 .slider_grid:hover .carousel-control.right {
-  right: 5%;
+  right: 2%;
 }
 .slider_grid .carousel {
   overflow: hidden;
@@ -911,9 +928,10 @@ footer h4 {
   height: 66px;
   width: 66px;
   border-radius: 50%;
-  top: 40px;
+  top: 130px;
   bottom: 0;
-  background-color: rgba(0, 0, 0, 0.65);
+  background-color: transparent;
+  background-image: none;
   -webkit-transition: all .3s;
   -moz-transition: all .3s;
   -ms-transition: all .3s;
@@ -2052,7 +2070,7 @@ a.book_library_bl:last-child {
 }
 .book_review_bl {
   background-color: #d6e5de;
-  padding: 50px 25px;
+  padding: 50px 0;
   border-bottom: 1px dotted #42875f;
   margin-bottom: 0;
   -webkit-border-radius: 0;
@@ -2484,7 +2502,7 @@ a.book_library_bl:last-child {
   top: 0;
 }
 .slider_lk .carousel-caption p {
-  margin-top: 50px;
+  margin-top: 33px;
 }
 .tabs_slide {
   list-style: none;
@@ -2570,22 +2588,27 @@ a.book_library_bl:last-child {
   background: url("../img/left_list_book.jpg") no-repeat right;
   background-size: cover;
   /*margin-left: 20px;*/
-}
-.booklet .b-wrap {
-  padding: 10px 30px !important;
+  padding-left: 70px!important;
+  padding-right: 30px!important;
 }
 .booklet .b-wrap-right {
   border-left: 1px solid #adaea8;
   background: url("../img/right_list_book.jpg") no-repeat left;
   background-size: cover;
+  padding-right: 70px!important;
+  padding-left: 30px!important;
   /*margin-left: -10px;
     padding-left: 50px!important;*/
+}
+.booklet .b-arrow-next {
+  right: 15px!important;
 }
 .booklet .b-arrow-next div {
   background: url("../img/arrow_book_right.png") no-repeat left top;
 }
 .booklet .b-arrow-prev div {
   background: url("../img/arrow_book_left.png") no-repeat left top;
+  left: 20px!important;
 }
 .link_opt {
   float: left;
@@ -2788,7 +2811,7 @@ a.book_library_bl:last-child {
   margin-right: -35px;
 }
 .big_slide_full .carousel_slide_top .carousel-caption {
-  left: 15px;
+  left: 45px;
 }
 .book_descript {
   background-color: #d5e7f4;
@@ -3167,6 +3190,7 @@ h2 .start_article,
 }
 .popover-content {
   padding: 4px 14px;
+  white-space: pre-line;
 }
 .popover.right > .arrow {
   top: 50%;
@@ -3304,8 +3328,9 @@ h2 .start_article,
   display: block!important;
 }
 .menu_style > div {
+  padding-top: 15px;
   border: 1px solid #aac9b8;
-  border-left: 0px;
+  border-left: 0;
 }
 .menu_style > div > .tab-content {
   height: 355px;
@@ -3771,6 +3796,31 @@ h2 .start_article,
 .container_sample img {
   width: 100%;
 }
+.container_sample .slider_grid,
+.container_sample .slider_grid:nth-child(1),
+.container_sample .slider_grid:nth-child(2),
+.container_sample .slider_grid:nth-child(3) {
+  border: none!important;
+  margin-bottom: 35px;
+}
+.container_sample .start_video {
+  width: 100%;
+  margin-bottom: 70px;
+}
+.container_sample .start_video:after {
+  content: '';
+  background: url("../img/ico_play.png") no-repeat;
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  z-index: 1;
+  display: block;
+  width: 129px;
+  height: 129px;
+}
 .txt_sample {
   padding: 0 45px;
 }
@@ -3810,6 +3860,9 @@ h2 .start_article,
   }
 }
 @media screen and (max-width: 1150px) {
+  #search_bl {
+    border-bottom: none;
+  }
   .menu_mob {
     background-color: #ffffff;
   }
@@ -3924,9 +3977,16 @@ h2 .start_article,
     width: 20%;
   }
 }
-@media screen and (min-width: 768px) and (max-width: 1200px) {
-  .nav_link_header li {
-    float: right;
+@media screen and (min-width: 768px) and (max-width: 1220px) {
+  .nav_link_header {
+    margin-right: 0;
+  }
+  .kab_btn {
+    width: auto;
+    padding: 0;
+  }
+  .radio_box_book .btn {
+    margin-right: 10px;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1000px) {
@@ -3986,6 +4046,9 @@ h2 .start_article,
   }
 }
 @media screen and (max-width: 768px) {
+  .param_list_slide li {
+    margin-bottom: 15px;
+  }
   .genre_bl {
     margin-bottom: 30px;
   }
@@ -4154,9 +4217,6 @@ h2 .start_article,
     } */
   .slider_grid {
     border: none!important;
-  }
-  .slider_grid .carousel-caption {
-    padding-top: 5px;
   }
   .slider_grid .carousel-caption .data_rec_slide {
     display: none;
@@ -4405,4 +4465,3 @@ h2 .start_article,
 .ulogin-button-instagram {
   background: url("../img/soc_ico/in_ico.png") no-repeat !important;
 }
-/*# sourceMappingURL=style.css.map */

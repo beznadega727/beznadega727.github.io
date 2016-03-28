@@ -598,3 +598,6 @@ $('[data-toggle="popover"]').popover({
 $('.menu_style > div:eq(0) a[data-toggle]').on('click', function () {
     $('.menu_style > div:eq(2) div.tab-pane').removeClass('active');
 })
+$(window).ready(function() {
+    $("body").fadeIn(800);
+});
