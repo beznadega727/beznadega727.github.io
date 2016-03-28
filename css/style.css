@@ -246,7 +246,7 @@ header .container_full {
   left: 82px;
   top: 91px;
   z-index: 1;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.41);
+  /*border-bottom: 1px solid rgba(255, 255, 255, 0.41);*/
   padding-left: 35px;
 }
 #search_bl.active {
@@ -264,7 +264,7 @@ header .container_full {
   width: 0;
   outline: none;
   text-align: left;
-  max-width: 220px;
+  /*max-width: 220px;*/
   /* Firefox 19+ */
   /* Firefox 18- */
 }

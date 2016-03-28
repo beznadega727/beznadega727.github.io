@@ -47,15 +47,14 @@ $(function() {
         par.find('li:eq(0) a').click();
     })
     $("#search_input").keyup(function(e){
+        var maxlength = 30;
         var val = $(this).val();
-        var width = val.length*20;
-        var maxlength = 47;
         $(this).val(val.substr(0, maxlength)); 
-        if(width > 170) {
-            $(this).stop().animate({
-                width: val.length*20
-            },100);
-        }
+        val = $(this).val();
+        var width = val.length*20;
+        $(this).stop().animate({
+            width: width > 170 ? val.length*20 : 170
+        },100);
     })
     $("#listView li").click(function () {
         if ( $("#listView li").hasClass("list-item-active") ) {
