@@ -431,6 +431,9 @@ header .container_full {
 #left_menu ul li:nth-child(5) img {
   width: 130%;
 }
+#left_menu ul li:nth-child(8) img {
+  width: 105%;
+}
 #left_menu ul li {
   -webkit-transition: all 0.5s;
   -moz-transition: all 0.5s;
