@@ -2493,6 +2493,9 @@ a.book_library_bl:last-child {
 .like_dislike_bl a {
   margin: 0 4px;
 }
+.like_dislike_bl a:last-child {
+  margin-right: 0px;
+}
 .like_link {
   background: url("../img/ico_like.png") no-repeat;
   padding-left: 30px;
@@ -3201,6 +3204,9 @@ a.book_library_bl:last-child {
 }
 .reviews_form .review_active_edt {
   background-color: #dae8e2;
+}
+.reviews_form .review_active_edt > div {
+  padding-right: 25px !important;
 }
 .reviews_form .data_reviews {
   float: right;
@@ -4451,11 +4457,17 @@ h2 .start_article,
     padding: 50px;
   }
 }
+.bl_opis_book_mob .col-xs-12 .col-sm-10 {
+  margin-left: 20px;
+}
 @media screen and (max-width: 768px) {
   .bl_opis_book_mob {
     background-color: #ffffff;
     margin-bottom: -25px;
     margin-top: 35px;
+  }
+  .bl_opis_book_mob .col-xs-12 .col-xs-12 {
+    margin-left: 0px;
   }
   .start_video:after {
     left: 0;
@@ -4503,7 +4515,7 @@ h2 .start_article,
   }
   .owl-carousel .mCSB_scrollTools.mCSB_scrollTools_horizontal {
     left: 0;
-    position: relative;
+    visibility: hidden;
   }
   .reviews_bl textarea {
     width: 80%;

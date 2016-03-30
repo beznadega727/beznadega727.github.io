@@ -2646,6 +2646,9 @@ a.book_library_bl:last-child {
     float: right;
     a {
         margin: 0 4px;
+        &:last-child {
+            margin-right: 0px;
+        }
     }
 }
 .like_link {
@@ -3400,6 +3403,9 @@ a.book_library_bl:last-child {
 .reviews_form {
     .review_active_edt {
         background-color: #dae8e2;
+        > div {
+            padding-right: 25px !important;
+        }
     }
     .data_reviews {
         float: right;
@@ -4815,11 +4821,23 @@ h2, .start_review_head {
         }
     }
 }
+.bl_opis_book_mob {
+    .col-xs-12 {
+        .col-sm-10 {
+            margin-left: 20px;
+        }
+    }
+}
 @media screen and (max-width: 768px) {
     .bl_opis_book_mob {
         background-color: #ffffff;
         margin-bottom: -25px;
         margin-top: 35px;
+        .col-xs-12 {
+            .col-xs-12 {
+                margin-left: 0px;
+            }
+        }
     }
     .start_video:after {
         left: 0;
@@ -4879,9 +4897,9 @@ h2, .start_review_head {
 
 
         //
-        position: relative;//эт враиант 1 с позиционированием
+        //position: relative;//эт враиант 1 с позиционированием
         //
-        //visibility: hidden;//вариант 2 скрыть
+        visibility: hidden;//вариант 2 скрыть
         //
         //overflow: hidden;
         //height: 0;
