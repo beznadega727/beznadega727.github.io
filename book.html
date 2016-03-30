@@ -594,7 +594,7 @@
                 </header>
                 <content class="content_home_pg">
                     <div class="container container_full">
-                        <div class="row book_descript">
+                        <div class="row book_descript" style="margin-bottom: 0px;">
                             <div class="container_post_full">
                                 <div class="col-xs-12">
                                     <div class="row">
@@ -684,7 +684,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="row book_descript" style="padding: 0;">
+                        <div class="row book_descript" style="padding: 0; margin-bottom: 18px;">
                             <div class="container_post_full">
                                 <div id="citate_carousel" class="carousel slide" data-ride="carousel">
                                     <!-- Indicators -->
@@ -748,6 +748,10 @@
                                             Я здоров, когда здоров ты, болен ты — и я больной.</p>
 
                                         <p>Родной язык — святой язык, отца и матери язык, Как ты прекрасен! Целый мир в твоем богатстве я постиг!</p>
+
+                                        <p>Призови народ к ученью, пусть лучи твои горят!   </p>
+
+                                        <p>Призови народ к ученью, пусть лучи твои горят!   </p>
 
                                         <p>Призови народ к ученью, пусть лучи твои горят!   </p>
 
@@ -841,10 +845,14 @@
                             </div>
                         </div>
                         <div class="row">
-                            <div class="container_post_full">
+                            <div class="col-xs-12">
                                 <div class="col-xs-12">
                                     <h2 class="title_section title_video1">Рецензия от издательства</h2>
                                 </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="container_post_full">
                                 <div class="col-sm-8">
                                     <div class="my_video">
                                         <div class="start_video"><img src="img/video.jpg" alt="" /></div>
@@ -852,7 +860,7 @@
                                     </div>
                                 </div>
                                 <div class="col-sm-4">
-                                    <h2 class="title_info_book">Ислам Кайсаров</h2>
+                                    <h2 class="title_info_book" style="font-size: 30px;">Ислам Кайсаров</h2>
                                     <p class="param_book_set">
                                         Расскажет от том чем ценна историяжизни Габдулы Тукая и как онапогружает читателя в прошлое, остро накладывая современные ценности на историю.
                                     </p>
@@ -1228,34 +1236,36 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="col-xs-12 book_review_bl review_active_edt">
-                                        <div class="col-sm-10 col-sm-offset-1 col-xs-12">
-                                            <div class="bl_name_and_star">
-                                                <a href="#">Константин Петрович </a>
-                                            </div>
-                                            <p class="data_reviews">
-                                                Сегодня
-                                            </p>
-                                        </div>
-                                        <div class="col-sm-8 col-sm-offset-1 col-xs-12">
-                                            <textarea class="txt_review" placeholder="Наберите сообщение" style="width: 50%;"></textarea>
-                                            <button class="btn btn-default">Отправить</button>
-
-                                        </div>
-                                        <div class="col-sm-2 col-xs-12">
-                                            <div class="like_dislike_bl">
-                                                <a href="#" class="like_link">
-
-                                                </a>
-                                                <a href="#" class="dislike_link">
-
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </div>
                                 </div>
                             </div>
 
+                        </div>
+                        <div class="row reviews_form">
+                            <div class="col-xs-12 book_review_bl review_active_edt">
+                                <div class="col-sm-10 col-xs-12">
+                                    <div class="bl_name_and_star">
+                                        <a href="#">Константин Петрович </a>
+                                    </div>
+                                    <p class="data_reviews">
+                                        Сегодня
+                                    </p>
+                                </div>
+                                <div class="col-sm-8 col-xs-12">
+                                    <textarea class="txt_review" placeholder="Наберите сообщение" style="width: 50%;"></textarea>
+                                    <button class="btn btn-default">Отправить</button>
+
+                                </div>
+                                <div class="col-sm-2 col-xs-12">
+                                    <div class="like_dislike_bl">
+                                        <a href="#" class="like_link">
+                                            <span>8</span>
+                                        </a>
+                                        <a href="#" class="dislike_link">
+                                            <span>1</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                         <div class="row">
                             <div class="col-xs-12">
@@ -1532,7 +1542,7 @@
                     </div>
                 </content>
 
-                <footer class="footer">
+                <footer class="footer footer_no_botton">
                     <div class="container container_full">
                         <div class="background_footer">
                             <div class="row">
@@ -1593,7 +1603,7 @@
             $(function () {
                 $("#mybook").booklet({
                     width: '100%',
-                    height: '450px',
+                    height: '550px',
                     arrows: true,
                     pageNumbers: false,
                     pagePadding: '30px',

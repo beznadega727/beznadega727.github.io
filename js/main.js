@@ -225,13 +225,15 @@ $(document).ready(function() {
     $('#mob_menu, .left_btn_menu').click(function(){
         if ($('#navbar-mob').css("marginLeft") == '0px') {
             $('#navbar-mob').animate({
-                    marginLeft: "-100%"
+                    marginLeft: "-150%"
                 }, 300
             );
+            $(this).removeClass('active');
             $('body,html').css("overflow","visible");
              $('.menu_link').fadeOut('100');
             $('body').css({'padding-right':'0'});
             $('#left_menu').removeClass('border_menu');
+            $('.logo_bl').removeClass('logo_index');
             //$('.content_bl').removeClass('blur_effect');
             $('#mob_menu').css("float","left");
             $('.header_nav_mob').css('position', 'static');
@@ -240,9 +242,11 @@ $(document).ready(function() {
                     marginLeft: "0px"
                 }, 300
             );
+            $(this).addClass('active');
             $('.menu_link').fadeIn('100');
             $('body,html').css("overflow","hidden");
             $('body').css({'padding-right':'17px'});
+            $('.logo_bl').addClass('logo_index');
             $('#left_menu').addClass('border_menu');
             $('.language_list').removeClass('language_show');
             //$('.content_bl').addClass('blur_effect');
