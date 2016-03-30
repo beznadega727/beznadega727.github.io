@@ -1,28 +1,136 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <!-- Generator: Adobe Illustrator 19.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
-<svg version="1.1" id="Слой_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	 viewBox="0 0 50 33.9" style="enable-background:new 0 0 50 33.9;" xml:space="preserve">
-<style type="text/css">
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   version="1.1"
+   id="Слой_1"
+   x="0px"
+   y="0px"
+   viewBox="0 0 50 39.7"
+   xml:space="preserve"
+   inkscape:version="0.91 r13725"
+   sodipodi:docname="5.svg"
+   width="50"
+   height="39.700001"><metadata
+     id="metadata37"><rdf:RDF><cc:Work
+         rdf:about=""><dc:format>image/svg+xml</dc:format><dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" /><dc:title></dc:title></cc:Work></rdf:RDF></metadata><defs
+     id="defs35" /><sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1531"
+     inkscape:window-height="855"
+     id="namedview33"
+     showgrid="false"
+     inkscape:zoom="9.8452621"
+     inkscape:cx="17.213617"
+     inkscape:cy="25.572595"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="0"
+     inkscape:current-layer="Слой_1" /><style
+     type="text/css"
+     id="style3">
 	.st0{fill:none;stroke:#015E27;stroke-width:0.998;}
 	.st1{clip-path:url(#SVGID_2_);fill:none;stroke:#015E27;stroke-width:0.878;}
 	.st2{clip-path:url(#SVGID_2_);fill:none;stroke:#015E27;stroke-width:0.998;}
-</style>
-<rect x="5.5" y="2.6" class="st0" width="19.4" height="28.7"/>
-<rect x="24.5" y="2.6" class="st0" width="19.4" height="28.7"/>
-<line class="st0" x1="10.5" y1="9.8" x2="19.8" y2="9.8"/>
-<line class="st0" x1="29.5" y1="9.8" x2="38.8" y2="9.8"/>
-<line class="st0" x1="10.5" y1="16.9" x2="19.8" y2="16.9"/>
-<line class="st0" x1="29.5" y1="16.9" x2="38.8" y2="16.9"/>
-<line class="st0" x1="10.5" y1="24.1" x2="19.8" y2="24.1"/>
-<line class="st0" x1="29.5" y1="24.1" x2="38.8" y2="24.1"/>
-<g>
-	<defs>
-		<rect id="SVGID_1_" y="0" width="50" height="33.9"/>
-	</defs>
-	<clipPath id="SVGID_2_">
-		<use xlink:href="#SVGID_1_"  style="overflow:visible;"/>
-	</clipPath>
-	<path class="st1" d="M2.4,0.4c0,0-2,0-2,2v29c0,0,0,2,2,2h45.1c0,0,2,0,2-2v-29c0,0,0-2-2-2H2.4z"/>
-	<circle class="st2" cx="46.7" cy="16.9" r="1.2"/>
-</g>
-</svg>
+</style><rect
+     x="5.578424"
+     y="3.1826043"
+     class="st0"
+     width="19.36327"
+     height="33.096455"
+     id="rect5"
+     style="fill:none;stroke:#015e27;stroke-width:1.07070243" /><rect
+     x="24.542452"
+     y="3.1826043"
+     class="st0"
+     width="19.36327"
+     height="33.096455"
+     id="rect7"
+     style="fill:none;stroke:#015e27;stroke-width:1.07070243" /><line
+     class="st0"
+     x1="10.745215"
+     y1="9.6352425"
+     x2="20.045216"
+     y2="9.6352425"
+     id="line9"
+     style="fill:none;stroke:#015e27;stroke-width:0.99800003" /><line
+     class="st0"
+     x1="29.745216"
+     y1="9.6352425"
+     x2="39.045216"
+     y2="9.6352425"
+     id="line11"
+     style="fill:none;stroke:#015e27;stroke-width:0.99800003" /><line
+     class="st0"
+     x1="10.47025"
+     y1="18.918844"
+     x2="19.77025"
+     y2="18.918844"
+     id="line13"
+     style="fill:none;stroke:#015e27;stroke-width:0.99800003" /><line
+     class="st0"
+     x1="29.542072"
+     y1="18.938387"
+     x2="38.842072"
+     y2="18.938387"
+     id="line15"
+     style="fill:none;stroke:#015e27;stroke-width:0.99800003" /><line
+     class="st0"
+     x1="10.542072"
+     y1="28.982395"
+     x2="19.842072"
+     y2="28.982395"
+     id="line17"
+     style="fill:none;stroke:#015e27;stroke-width:0.99800003" /><line
+     class="st0"
+     x1="29.542072"
+     y1="28.982395"
+     x2="38.842072"
+     y2="28.982395"
+     id="line19"
+     style="fill:none;stroke:#015e27;stroke-width:0.99800003" /><g
+     id="g21"
+     transform="matrix(0.99865084,0,0,1.1656595,0.07576039,0.13977238)"><defs
+       id="defs23"><rect
+         id="SVGID_1_"
+         y="0"
+         width="50"
+         height="33.900002"
+         x="0" /></defs><clipPath
+       id="SVGID_2_"><use
+         xlink:href="#SVGID_1_"
+         style="overflow:visible"
+         id="use27"
+         x="0"
+         y="0"
+         width="100%"
+         height="100%" /></clipPath><path
+       class="st1"
+       d="m 2.4,0.4 c 0,0 -2,0 -2,2 l 0,29 c 0,0 0,2 2,2 l 45.1,0 c 0,0 2,0 2,-2 l 0,-29 c 0,0 0,-2 -2,-2 l -45.1,0 z"
+       id="path29"
+       clip-path="url(#SVGID_2_)"
+       inkscape:connector-curvature="0"
+       style="fill:none;stroke:#015e27;stroke-width:0.87800002" /><circle
+       class="st2"
+       cx="46.700001"
+       cy="16.9"
+       r="1.2"
+       id="circle31"
+       clip-path="url(#SVGID_2_)"
+       style="fill:none;stroke:#015e27;stroke-width:0.99800003" /></g></svg>

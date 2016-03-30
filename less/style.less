@@ -283,7 +283,7 @@ header {
         display: inline-block;
         color: #ffffff;
         font-family: Roboto, sans-serif;
-        font-weight: 300;
+        font-weight: 200;
         font-size: 33px;
         background-color: transparent;
         border: none;
@@ -323,6 +323,9 @@ header {
             transition: all 0.3s;
             color: #5a7864;
             border: 1px solid #a5c7b7;
+        }
+        &[disabled] {
+            background: transparent;
         }
     }
 }
@@ -371,7 +374,7 @@ header {
         background-image: linear-gradient(to bottom, #015e27, #015e27);
     }
     .back-bar {
-        height: 2px!important;
+        height: 3px!important;
         .pointer.low {
             width: 0px;
             height: 0px;
@@ -1102,6 +1105,7 @@ footer {
     .book_firm {
         padding-top: 30px;
         float: left;
+        font-size: 19px;
     }
 }
 .book_firm {
@@ -2960,9 +2964,11 @@ a.book_library_bl:last-child {
                 font-size: 22px;
                 font-family: 'Roboto', sans-serif;
                 font-weight: 300;
-                text-decoration: underline;
-                -moz-text-decoration-color: rgba(255, 255, 255, 0.49); /* Code for Firefox */
-                text-decoration-color: rgba(255, 255, 255, 0.5);
+                /*text-decoration: underline;
+                -moz-text-decoration-color: rgba(255, 255, 255, 0.49); 
+                text-decoration-color: rgba(255, 255, 255, 0.5);*/
+                border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+                display: inline;
             }
             .number_cart {
                 color: #00ffd2;
@@ -2983,7 +2989,7 @@ a.book_library_bl:last-child {
                 left: 0;
                 bottom: -38px;
                 border: 20px solid transparent;
-                border-bottom: 15px solid #FFFFFF;
+                border-bottom: 15px solid #f4f8f7;
                 width: 0;
                 margin: 0 auto;
                 -webkit-transition: all 0.3s;
@@ -3492,6 +3498,29 @@ h2, .start_review_head {
         margin-right: 5%;
     }
 }
+.glyphicon-star {
+    &:before {
+        background: url("../img/star_ico.svg") no-repeat;
+        content: "";
+        height: 18px;
+        width: 18px;
+        position: relative;
+        float: left;
+        background-size: 105%;
+        top: 0.5px;
+    }
+}
+.glyphicon-star-empty {
+    &:before {
+        background: url("../img/star_true_ico.svg")no-repeat;
+        content: "";
+        height: 17px;
+        width: 17px;
+        position: relative;
+        float: left;
+        background-size: 105%;
+    }
+}
 .arrow_menu_mob {
     width: 0;
     height: 0;
@@ -3622,7 +3651,7 @@ h2, .start_review_head {
     width: 560px;
     left: 0;
     height: 100% !important;
-    background-color: #ffffff;
+    background-color: #f4f8f7;
     position: fixed;
     overflow-y: auto;
     padding: 252px 0 70px;
@@ -4457,6 +4486,25 @@ h2, .start_review_head {
         }
     }
 }
+@media screen and (max-width: 750px) {
+    .carousel_slide_top {
+        .carousel-control {
+            display: none;
+        }
+        .carousel-inner {
+            .slide_section, .carousel-indicators {
+                display: none;
+            }
+            .item {
+                .carousel-caption {
+                    p, h1 {
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+}
 @media screen and (max-width: 600px) {
     .container_full > .row > .col-xs-12 > .col-xs-12 h2 {
         margin-top: 10px;
@@ -4505,9 +4553,6 @@ h2, .start_review_head {
         .slide_section {
             top: 0px;
         }
-    }
-    .carousel_slide_top .carousel-indicators {
-        display: none;
     }
 }
 @media screen and (max-width: 450px) {
@@ -5316,5 +5361,17 @@ h2, .start_review_head {
     }
     &.ico_3 {
         background-position: 59px 0;
+    }
+}
+.culture_maps {
+    .slider-container .back-bar .pointer-label {
+        font-size: 19px;
+        background: transparent;
+        left: -5px;
+        top: -30px;
+    }
+    .slider-container .scale ins {
+        font-size: 19px;
+        top: 10px;
     }
 }
