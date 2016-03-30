@@ -4515,7 +4515,8 @@ h2 .start_article,
   }
   .owl-carousel .mCSB_scrollTools.mCSB_scrollTools_horizontal {
     left: 0;
-    visibility: hidden;
+    overflow: hidden;
+    height: 0;
   }
   .reviews_bl textarea {
     width: 80%;
