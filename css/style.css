@@ -4458,7 +4458,7 @@ h2 .start_article,
   }
 }
 .bl_opis_book_mob .col-xs-12 .col-sm-10 {
-  margin-left: 20px;
+  margin-left: 10px;
 }
 @media screen and (max-width: 768px) {
   .bl_opis_book_mob {
