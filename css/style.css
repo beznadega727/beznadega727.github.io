@@ -3234,12 +3234,15 @@ a.book_library_bl:last-child {
 .reviews_form .btn {
   background-color: #ffffff;
 }
+.reviews_bl .bl_name_and_star {
+  float: left;
+}
 .reviews_bl .bl_name_and_star span.stars_book_option {
   color: #00382F;
   font-size: 20px;
 }
 .reviews_bl p.txt_review {
-  padding-bottom: 40px;
+  padding: 40px 0;
 }
 .reviews_bl .data_reviews {
   float: right;
