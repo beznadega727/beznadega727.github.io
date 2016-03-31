@@ -77,6 +77,10 @@ header .container_full {
   margin-right: 20px;
   width: auto !important;
 }
+.logo_bl img {
+  width: 235px;
+  height: 65px;
+}
 .kab_btn {
   z-index: 1;
   padding: 0;
@@ -3566,6 +3570,12 @@ h2 .start_article,
   padding-top: 7px;
 }
 .menu_link .menu_style ul li:nth-child(2) span {
+  margin-top: 7px !important;
+}
+.menu_link .menu_style ul li:nth-child(4) span {
+  margin-top: 7px !important;
+}
+.menu_link .menu_style ul li:nth-child(2) span {
   margin-left: -10px;
 }
 .menu_link .menu_style ul li {
@@ -3573,6 +3583,7 @@ h2 .start_article,
 }
 .menu_link .menu_style ul li span {
   line-height: 1em;
+  margin-top: 0px;
 }
 .menu_link .menu_style ul li a {
   padding-top: 9px;
@@ -4796,6 +4807,8 @@ h2 .start_article,
   margin: 0 auto;
   width: 70%;
   margin-bottom: 30px;
+  padding: 8px 12px;
+  font-size: 20px;
 }
 .address_row .item_td {
   padding: 20px;
@@ -4992,3 +5005,4 @@ h2 .start_article,
   font-size: 19px;
   top: 10px;
 }
+/*# sourceMappingURL=style.css.map */
