@@ -1,5 +1,7 @@
 @import url(https://fonts.googleapis.com/css?family=Exo+2:300,400,500,700);
 @import url(https://fonts.googleapis.com/css?family=Roboto:400,500,300,700,100);
+@import url(https://fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic);
+
 //html,body {
 //  height: 100%;
 //  overflow: hidden;
@@ -92,6 +94,7 @@ header {
     }
     .nav_link_header {
         z-index: 1;
+        margin-right: 33px;
     }
 }
 .page {
@@ -343,16 +346,17 @@ header {
             top: 0;
             padding-right: 0;
             li {
-                background-color: #696969;
+                border: 1px solid #696969;
+                /*background-color: #696969;*/
                 &.active {
                     border: 1px solid #696969;
-                    background-color: #ffffff;
+                    background-color: #696969;
                 }
             }
         }
     }
     .btn {
-        margin-top: 20px;
+        margin: 20px 0;
         padding: 4px 15px;
         font-size: 21px;
     }
@@ -413,6 +417,9 @@ header {
 .slider_range_bl {
     margin: 40px 0 55px;
     padding: 0 25px;
+    .slider-container {
+        max-width: 100%;
+    }
 }
 .blur_effect {
     -webkit-filter: blur(8px);
@@ -560,7 +567,7 @@ header .padd_content {
 }
 .header_home_pg {
     position: absolute;
-    width: 95%;
+    width: 95.7%;
     top: 0;
     left: 80px;
     //position: absolute;
@@ -586,8 +593,8 @@ header .padd_content {
             > .col-xs-12 {
                 padding-left: 25px;
                 h2 {
-                    margin-top: 40px;
-                    margin-bottom: 29px;
+                    margin-top: 33px;
+                    margin-bottom: 22px;
                 }
             }
         }
@@ -611,7 +618,7 @@ header .padd_content {
     }
 }
 .tatar_language {
-    margin: 65px -30px 54px;
+    margin: 65px -30px 0px;
     .lang_link {
         display: block;
         text-align: center;
@@ -701,7 +708,7 @@ header .padd_content {
 }
 .load_yet_bl {
     text-align: center;
-    margin: 40px 0;
+    margin: 26px 0 0;
 }
 .btn-yet {
     border: 1px solid rgba(128, 174, 146, 0.71);
@@ -762,14 +769,15 @@ header .padd_content {
     }
 }
 .btn_logins {
-    margin-right: 40px;
+    margin-right: 25px;
+    //margin-right: 40px;
     float: right;
 }
 footer {
     &.footer_no_botton {
         margin-top: 0px;
     }
-    margin-top: 50px;
+    margin-top: 33px;
     background-color:#eff4e5;
     filter:progid:DXImageTransform.Microsoft.gradient(GradientType=1,startColorstr=#eff4e5, endColorstr=#e9ecff);
     background-image:-moz-linear-gradient(left, #eff4e5 0%, #e9ecff 100%);
@@ -845,7 +853,7 @@ footer {
     }
 }
 .copyright_com {
-    margin-top: 120px;
+    margin-top: 60px;
     margin-bottom: 30px;
     span {
         font-size: 19px;
@@ -862,6 +870,7 @@ footer {
         font-size: 19px;
         font-weight: 300;
         text-decoration: none;
+        margin: 0 2px;
     }
 }
 .slide {
@@ -1004,7 +1013,7 @@ footer {
         background-color: #ff9c52;
     }
     &.lite_blue_sec {
-        background-color: #eaffff;
+        background-color: #6494ff;
     }
     &.blue_sec {
         background-color: #94dfff;
@@ -1108,7 +1117,7 @@ footer {
 .culture_maps {
     .book_firm {
         padding-top: 30px;
-        float: left;
+        float: right;
         font-size: 19px;
     }
 }
@@ -1222,7 +1231,7 @@ p.top_tat_book_bl_off {
 }
 .top_tat_book_bl {
     padding: 0 45px;
-    margin: 0px 5px 40px;
+    margin: 0px 5px 13px;
     p {
         font-family: "Exo 2",sans-serif;
         font-size: 20px;
@@ -1232,7 +1241,7 @@ p.top_tat_book_bl_off {
         margin-left: -45px;
     }
     .owl-carousel {
-        margin-top: 30px;
+        margin-top: 11px;
         float: left;
         .owl-buttons {
             position: absolute;
@@ -1485,7 +1494,8 @@ select::-ms-expand {
     bottom: 0;
 }
 .read_now_bl {
-    padding: 26px 5px;
+    padding: 13px 5px;
+    //padding: 26px 5px;
     background-image: -webkit-gradient(
         linear,
         left top, right top,
@@ -1548,10 +1558,18 @@ select::-ms-expand {
     }
 }
 .rubl_symbol {
-    font-family: 'Exo 2', sans-serif;
+    //font-family: 'Exo 2', sans-serif;
     font-weight: 500!important;
     color: #000000;
     font-size: 20px;
+    font-family: 'PT Sans', serif!important;
+    :before {
+        content: "";
+        height: 4px;
+        width: 10px;
+        background-color: #000000;
+        position: absolute;
+    }
 }
 .people_rewerd {
     font-family: 'Exo 2', sans-serif;
@@ -1559,7 +1577,10 @@ select::-ms-expand {
     font-style: italic;
     font-size: 20px;
     color: #015e27;
-    margin: 15px 0;
+    margin: 0 0 20px;
+    span, .glyphicon {
+        margin: 0 10px;
+    }
 }
 .border_menu {
     border-right: none!important;
@@ -1587,22 +1608,24 @@ select::-ms-expand {
     &:after {
         content: "\00BB";
         font-family: 'Roboto', sans-serif;
-        font-weight: 300;
         font-size: 50px;
         right: 0;
         bottom: -7px;
         line-height: 20px;
         position: relative;
+        font-style: normal;
+        font-weight: 400;
     }
     &:before {
         content: "\00ab";
         font-family: 'Roboto', sans-serif;
-        font-weight: 300;
         font-size: 50px;
         position: absolute;
         left: -14px;
         top: 0;
         line-height: 20px;
+        font-style: normal;
+        font-weight: 400;
     }
 }
 .editor_book {
@@ -1610,7 +1633,7 @@ select::-ms-expand {
 }
 .owl-carousel {
     margin-top: 30px;
-    margin-bottom: 14px;
+    margin-bottom: 0px;
     .owl-wrapper-outer {
         z-index: 1;
     }
@@ -1625,9 +1648,10 @@ select::-ms-expand {
         height: 16px;
         right: 0;
         left: -25px;
+        bottom: -16px;
     }
     .price_book {
-        margin: 10px 5px 30px;
+        margin: 10px 5px 28px;
         width: 95%;
         text-align: left;
         position: relative;
@@ -1812,7 +1836,7 @@ select::-ms-expand {
     color: #000000;
 }
 .nav_history_list, .nav_history_list2 {
-    margin: 35px 0 15px 60px;
+    margin: 25px 0 5px 60px;
     list-style: none;
     padding: 0;
     float: left;
@@ -1856,7 +1880,7 @@ select::-ms-expand {
                 content: '';
                 position: absolute;
                 left: 40%;
-                bottom: -40px;
+                bottom: -30px;
                 border: 20px solid transparent;
                 border-bottom: 15px solid #d6e5de;
             }
@@ -1946,7 +1970,8 @@ select::-ms-expand {
         float: right;
         font-weight: 400;
         font-family: "Exo 2", sans-serif;
-        margin-left: 100px;
+        margin-left: 10px;
+        margin-right: 33px;
         margin-top: 6px;
     }
     .btn {
@@ -1982,6 +2007,9 @@ select::-ms-expand {
 
         }
     }
+}
+.rouble {
+    font-family: 'PT Sans', serif;
 }
 .price_book_ord {
     color: #000;
@@ -2025,6 +2053,24 @@ select::-ms-expand {
     &.active {
         background: url("../img/ico_star_zak_2.png")no-repeat;
     }
+}
+.inp_div {
+    width: 95px;
+    display: inline-block;
+    float: left;
+    position: relative;
+    input {
+        padding-right: 35px;
+    }
+}
+.shtuk {
+    position: absolute;
+    right: 8px;
+    top: 0;
+    bottom: 0;
+    margin: auto 0;
+    height: 25px;
+    font-size: 18px;
 }
 .quont-minus.btn,.quont-plus.btn {
     line-height: 40px;
@@ -2078,6 +2124,7 @@ select::-ms-expand {
     -o-transition: all ease .3s;
     transition: all ease .3s;
     background-color: transparent;
+    font-size: 18px;
 }
 .number_quont:focus {
     outline: none;
@@ -2088,6 +2135,10 @@ select::-ms-expand {
 }
 .bl_collection {
     position: relative;
+    &.book_review_bl {
+        padding-top: 33px;
+        padding-bottom: 33px;
+    }
     .book_status {
         padding-top: 40px;
         p {
@@ -2103,13 +2154,13 @@ select::-ms-expand {
     }
     .close_zak {
         position: absolute;
-        top: 50px;
-        right: 10px;
+        top: 33px;
+        right: 43px;
     }
     .star_btn_zak {
         position: absolute;
-        bottom: 50px;
-        right: 10px;
+        bottom: 33px;
+        right: 43px;
     }
     a {
         font-size: 18px;
@@ -2301,6 +2352,9 @@ a.book_library_bl:last-child {
         color: #000000;
     }
 }
+.info_dop {
+    padding-left: 52px!important;
+}
 .btn_buy_book {
 
 }
@@ -2320,7 +2374,7 @@ a.book_library_bl:last-child {
 .book_review_bl {
     background-color: #d6e5de;
     //padding: 50px 25px;
-    padding: 50px 15px;
+    padding: 23px 15px;
     border-bottom: 1px dotted #42875f;
     margin-bottom: 0;
     -webkit-border-radius: 0;
@@ -2548,7 +2602,8 @@ a.book_library_bl:last-child {
     -webkit-border-radius: 6px;
     -moz-border-radius: 6px;
     border-radius: 6px;
-    padding: 35px 40px 20px 70px;
+    padding: 35px 40px 20px 30px;
+    //padding: 35px 40px 20px 70px;
     .row {
         margin-bottom: 10px;
         div {
@@ -2569,7 +2624,8 @@ a.book_library_bl:last-child {
             border-bottom: 1px dotted #003e31;
         }
         .ico_cart {
-            margin-left: 6px;
+            margin-left: 10px;
+            margin-bottom: -9px;
         }
     }
 }
@@ -2658,7 +2714,7 @@ a.book_library_bl:last-child {
 .like_link {
     background: url("../img/ico_like.png")no-repeat;
     padding-left: 30px;
-    padding-top: 3px;
+    padding-top: 7px;
     font-size: 17px;
     color: #015e27;
 }
@@ -2944,7 +3000,6 @@ a.book_library_bl:last-child {
     li {
         min-width: 150px;
         display: inline-block;
-        width: 20%;
         float: left;
         position: relative;
         -webkit-transition: all 0.3s;
@@ -2953,7 +3008,7 @@ a.book_library_bl:last-child {
         -o-transition: all 0.3s;
         transition: all 0.3s;
         a {
-            padding: 94px 25px 0;
+            padding: 94px 20px 0;
             display: block;
             text-align: center;
             -webkit-transition: all 0.3s;
@@ -2962,6 +3017,7 @@ a.book_library_bl:last-child {
             -o-transition: all 0.3s;
             transition: all 0.3s;
             height: 188px;
+            width: 210px;
             position: relative;
             span {
                 display: block;
@@ -2985,7 +3041,7 @@ a.book_library_bl:last-child {
                 bottom: 0px;
                 width: 100%;
                 text-align: center;
-                margin: 0 -25px;
+                margin: 0 -20px;
             }
         }
         &.active {
@@ -3183,6 +3239,7 @@ a.book_library_bl:last-child {
         text-decoration: none!important;
         margin-bottom: 20px;
         display: inline-block;
+        margin-left: 53px;
     }
     .img_book {
         margin: 0 -30px;
@@ -3214,7 +3271,7 @@ a.book_library_bl:last-child {
         box-shadow: none;
         text-align: left;
         padding: 0;
-        margin-right: 20px;
+        margin-right: 25px;
         -webkit-filter: grayscale(100%);
         -webkit-filter: grayscale(1);
         filter: grayscale(100%);
@@ -3409,6 +3466,9 @@ a.book_library_bl:last-child {
         background-color: #dae8e2;
         > div {
             padding-right: 25px !important;
+            > div {
+                padding-left: 10px;
+            }
         }
     }
     .data_reviews {
@@ -3456,17 +3516,19 @@ a.book_library_bl:last-child {
         }
     }
     p.txt_review {
-        padding: 40px 0;
+        padding: 33px 0;
+        margin: 0;
     }
     .data_reviews {
         float: right;
         margin-top: 10px;
+        margin-bottom: 0px;
     }
     .book_review_bl {
         background-color: transparent;
         border-bottom: 1px dashed #4e8f69;
         max-width: 1200px;
-        margin: 0 15px;
+        margin: 0 10px;
         > div {
             max-width: 1000px;
         }
@@ -3497,7 +3559,7 @@ h2, .start_review_head {
     }
 }
 .start_review_head {
-    margin: 0 15px;
+    margin: 0 10px;
     h2, .start_review, .start_article {
         float: left;
     }
@@ -3648,13 +3710,16 @@ h2, .start_review_head {
     padding: 4px 14px;
     white-space: pre-line;
 }
-.popover.right>.arrow {
-    top: 50%;
-    left: -11px;
-    margin-top: -11px;
-    border-right-color: #015e27;
-    border-right-color: #015e27;
-    border-left-width: 0;
+.popover.right {
+    position: fixed;
+    .arrow {
+        top: 50%;
+        left: -11px;
+        margin-top: -11px;
+        border-right-color: #015e27;
+        border-right-color: #015e27;
+        border-left-width: 0;
+    }
 }
 
 .menu_mob {
@@ -3774,10 +3839,26 @@ h2, .start_review_head {
     position: fixed;
     left: 0;
     z-index: 15;
-    width: 100%;
+    width: 615px;
     top: 246px;
     //top: 185px;
+    .select-style {
+        background: #f4f8f7;
+        &:after {
+            content: "";
+            border-left: 5px solid transparent;
+            border-top: 5px solid #518e71;
+            border-right: 5px solid transparent;
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            right: 0;
+            margin: auto 10px;
+            height: 0;
+        }
+    }
     .language_link.select-style {
+        position: relative;
         width: 208px;
         margin-left: 85px;
         select {
@@ -3792,6 +3873,7 @@ h2, .start_review_head {
     .menu_style {
         > div {
             padding-top: 7px;
+            width: 50% !important;
         }
         ul {
             li:nth-child(2) {
@@ -3861,7 +3943,7 @@ h2, .start_review_head {
         //border: 1px solid #aac9b8;
         border-left: 0;
         &.col-xs-2 {
-            width: 335px;
+            width: 323px;
         }
         > .tab-content {
             height: 355px;
@@ -4264,7 +4346,7 @@ h2, .start_review_head {
         .carousel-caption {
             top: inherit;
             bottom: 0;
-            padding: 95px 40px 10px;
+            padding: 95px 33px 10px;
         }
     }
 }
@@ -4305,7 +4387,9 @@ h2, .start_review_head {
     }
 }
 .list_link_ctl {
+    padding-left: 28px;
     list-style: none;
+    margin-bottom: 19px;
     li {
         display: inline-block;
         padding: 6px 0px;
@@ -4313,6 +4397,7 @@ h2, .start_review_head {
             a {
                 text-decoration: none!important;
                 border: 1px solid rgba(128, 174, 146, 0.71);
+                color: #056233;
             }
         }
         a {
@@ -4320,16 +4405,16 @@ h2, .start_review_head {
             -moz-border-radius: 3px;
             border-radius: 3px;;
             border: 1px solid transparent;
-            color: rgba(0, 0, 0, 0.5);
-            font-size: 24px;
+            color: #696969;
+            font-size: 20px;
             background-color: transparent;
             -webkit-transition: all 0.3s;
             -moz-transition: all 0.3s;
             -ms-transition: all 0.3s;
             -o-transition: all 0.3s;
             transition: all 0.3s;
-            font-family: 'Roboto', sans-serif;
-            font-weight: 300;
+            font-family: "Exo 2",sans-serif;
+            font-weight: 500;
             padding: 6px 20px;
             text-decoration: underline;
             &:hover,&:active,&:focus {
@@ -4377,6 +4462,9 @@ h2, .start_review_head {
             bottom: 3px;
             left: 8px;
             padding: 0;
+            li:nth-child(2), li:nth-child(3) {
+                opacity: 0;
+            }
         }
         list-style: none;
         li {
@@ -4498,6 +4586,9 @@ h2, .start_review_head {
     .sortirov_bl {
         padding-top: 25px;
     }
+    .type_book, .language_book {
+        width: 100%;
+    }
 }
 @media screen and (max-width: 850px) {
     .grid_ctl .slider_grid .carousel-caption {
@@ -4568,7 +4659,7 @@ h2, .start_review_head {
         .btn_delete_book {
             margin-top: 10px;
         }
-    }   
+    }
     #sample_page_header {
         h1 {
             font-size: 20px;
@@ -4882,8 +4973,8 @@ h2, .start_review_head {
     .bl_payment {
         padding: 0;
     }
-    .bl_payment_end { 
-        .list_radio_btn { 
+    .bl_payment_end {
+        .list_radio_btn {
             .select-style {
                 margin-left: 0px;
             }
@@ -5167,12 +5258,18 @@ h2, .start_review_head {
         }
     }
 }
-.owl-theme .owl-controls .owl-page span {
-    background: transparent !important;
+.owl-theme .owl-controls {
+    margin-top: 0px !important;
+    .owl-page span {
+        background: transparent !important;
+    }
+    .owl-pagination {
+        height: 16px;
+    }
 }
 .container_post_full {
-    max-width: 1200px; 
-    width: 100%; 
+    max-width: 1200px;
+    width: 100%;
     margin: 0 auto;
 }
 /*======= Map Styling ============*/
@@ -5216,7 +5313,7 @@ h2, .start_review_head {
         right: 15px;
     }
 }
-.popup-form-content{ 
+.popup-form-content{
     padding: 20px !important;
     padding-top: 0px !important;
     .form-control {
@@ -5297,6 +5394,7 @@ h2, .start_review_head {
     position: relative;
     display: none;
     margin-bottom: 60px;
+    margin-left: -5px;
     textarea {
         width: 100%;
         height: 200px;
@@ -5360,7 +5458,7 @@ h2, .start_review_head {
                 text-align: left;
                 top: 0px;
                 > div {
-                    overflow: hidden; 
+                    overflow: hidden;
                     height: 260px;
                 }
                 p {
@@ -5379,10 +5477,10 @@ h2, .start_review_head {
         top: -20px;
     }
     .glyphicon-chevron-left::before {
-        background: rgba(0, 0, 0, 0) url("../img/arrow_slide_left_black.png") no-repeat scroll 0 0 / cover 
+        background: rgba(0, 0, 0, 0) url("../img/arrow_slide_left_black.png") no-repeat scroll 0 0 / cover
     }
     .glyphicon-chevron-right::before {
-        background: rgba(0, 0, 0, 0) url("../img/arrow_slide_right_black.png") no-repeat scroll 0 0 / cover 
+        background: rgba(0, 0, 0, 0) url("../img/arrow_slide_right_black.png") no-repeat scroll 0 0 / cover
     }
     .carousel-control {
         .glyphicon-chevron-right, .icon-next {
@@ -5436,6 +5534,7 @@ h2, .start_review_head {
     .slider-container .scale ins {
         font-size: 19px;
         top: 10px;
+        color: #333;
     }
 }
 .logo_blue_svg {
