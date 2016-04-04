@@ -3269,6 +3269,7 @@ a.book_library_bl:last-child {
 }
 .reviews_form .review_active_edt {
   background-color: #dae8e2;
+  padding-left: 30px;
 }
 .reviews_form .review_active_edt > div {
   padding-right: 25px !important;
@@ -4970,7 +4971,7 @@ h2 .start_article,
   position: relative;
   display: none;
   margin-bottom: 60px;
-  margin-left: -5px;
+  margin-left: 10px;
 }
 .article_active_edit textarea {
   width: 100%;
