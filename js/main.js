@@ -191,7 +191,8 @@ jQuery(document).ready(function($) {
     });
     $('.quont-plus').click(function () {
         var $input = $(this).parent().find('input');
-        $input.val(parseInt($input.val()) + 1);
+        var new_val = parseInt($input.val()) + 1;
+        $input.val(new_val+' шт');
         $input.change();
         return false;
     });
