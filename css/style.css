@@ -1809,7 +1809,7 @@ select::-ms-expand {
 }
 .group_ord_btn {
   display: inline-block;
-  padding: 34px 0 0;
+  padding: 27px 0 0;
   float: right;
 }
 .group_ord_btn .archive_link {
@@ -1821,7 +1821,7 @@ select::-ms-expand {
   font-family: "Exo 2", sans-serif;
   margin-left: 10px;
   margin-right: 33px;
-  margin-top: 6px;
+  margin-top: 10px;
 }
 .group_ord_btn .btn {
   background-color: #05dddc;
