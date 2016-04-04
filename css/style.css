@@ -2468,6 +2468,7 @@ a.book_library_bl:last-child {
 }
 .history_cart a .number_cart {
   border-bottom: 1px dotted #003e31;
+  font-size: 19px;
 }
 .history_cart a .ico_cart {
   margin-left: 10px;
@@ -2489,15 +2490,17 @@ a.book_library_bl:last-child {
 }
 .ico_cart {
   width: 60px;
-  height: 40px;
+  height: 32px;
   display: inline-block;
   margin-bottom: -5px;
 }
 .ico_cart.master_cart {
   background: url("../img/master_card_ico.png") no-repeat;
+  background-size: 75%;
 }
 .ico_cart.visa_el_cart {
   background: url("../img/visa_el_ico.png") no-repeat;
+  background-size: 75%;
 }
 .name_inp {
   font-size: 20px;
