@@ -199,11 +199,31 @@ header {
     }
 }
 .btn_buy_del {
+    position: relative;
     a {
         width: 30%;
+        height: 100%;
         img {
             width: 1.5em;
             height: 1.5em;
+        }
+        span {
+            background-image: url("../img/sprite_green_new.svg");
+            background-position: 179px 0;
+            background-size: 1100% 100%;
+            width: 35px;
+            height: 33px;
+            position: absolute;
+            top: 0px;
+            &.ico_people_book {
+                background-position: 179px 0;
+            }
+            &.ico_download_book {
+                background-position: 132px 0;
+            }
+            &.ico_del_book {
+                background-position: 85px 0;
+            }
         }
     }
     .btn_buy_book {
@@ -1375,6 +1395,12 @@ p.top_tat_book_bl_off {
                 }
                 &.opt_ico_4 {
                     background-position: -60px 0;
+                }
+                &.opt_ico_5 {
+                    background-image: url("../img/sprite_white_new.svg");
+                    background-position: 42px 0;
+                    width: 40px;
+                    background-size: 1100% 100%;
                 }
             }
         }
@@ -2625,6 +2651,7 @@ a.book_library_bl:last-child {
         margin: 0 0 15px;
         .number_cart {
             border-bottom: 1px dotted #003e31;
+            font-size: 19px;
         }
         .ico_cart {
             margin-left: 10px;
@@ -2648,14 +2675,16 @@ a.book_library_bl:last-child {
 }
 .ico_cart {
     width: 60px;
-    height: 40px;
+    height: 32px;
     display: inline-block;
     margin-bottom: -5px;
     &.master_cart {
         background: url("../img/master_card_ico.png") no-repeat;
+        background-size: 75%;
     }
     &.visa_el_cart {
         background: url("../img/visa_el_ico.png") no-repeat;
+        background-size: 75%;
     }
 }
 .name_inp {
@@ -4948,7 +4977,7 @@ h2, .start_review_head {
 @media screen and (max-width: 768px) {
     .bl_opis_book_mob {
         background-color: #ffffff;
-        margin-bottom: -25px;
+        /*margin-bottom: -25px;*/
         margin-top: 35px;
         .col-xs-12 {
             .col-xs-12 {
@@ -5551,4 +5580,31 @@ h2, .start_review_head {
 }
 .logo_blue_svg {
     width: 235px;
+}
+.citate_div_header {
+    position: relative;
+    h2 {
+        margin: 0 0 10px !important;
+        position: absolute;
+        top: -40px;
+        left: 25px;
+    }
+}
+@media screen and (max-width: 770px) {
+    .citate_div_header {
+        h2 {
+            position: static;
+            margin-left: 0px !important;
+            margin-top: 10px !important;
+        }
+    }
+}
+@media screen and (min-width: 770px) and (max-width: 1160px) {
+    .citate_div_header {
+        h2 {
+            position: static;
+            margin-left: 10px !important;
+            margin-top: 10px !important;
+        }
+    }
 }
