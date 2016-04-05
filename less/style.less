@@ -200,9 +200,13 @@ header {
 }
 .btn_buy_del {
     position: relative;
+    width: 100%;
+    float: left;
     a {
-        width: 30%;
-        height: 100%;
+        width: 35px;
+        margin-right: 5px;
+        height: 33px;
+        overflow: hidden;
         img {
             width: 1.5em;
             height: 1.5em;
@@ -485,7 +489,7 @@ header {
         margin-top: 115px;
         //margin-top: 128px;
         margin-left: 25px;
-        li:nth-child(5) {
+        li:nth-child(7) {
             img {
                 width: 130%;
             }
@@ -1148,8 +1152,8 @@ footer {
     font-weight: 400;
 }
 .sortirov_bl {
-    padding-left: 40px;
-    padding-bottom: 25px;
+    padding-left: 25px;
+    padding-bottom: 8px;
     padding-top: 0px;
     float: left;
     p {
@@ -2220,8 +2224,8 @@ select::-ms-expand {
     padding: 10px 25px;
 }
 .recently_bl {
-    padding-bottom: 40px;
-    margin-top: 20px;
+    padding-bottom: 23px;
+    margin-top: 33px;
     padding-top: 10px;
     background-image: -webkit-gradient(
         linear,
@@ -2237,7 +2241,7 @@ select::-ms-expand {
     background-image: linear-gradient(to left bottom, #13487A 0%, #437D67 60%);
     h2 {
         color: #ffffff;
-        margin: 45px 0 50px !important;
+        margin: 23px 0 33px !important;
     }
     img {
         width: 100%;
@@ -2363,7 +2367,10 @@ select::-ms-expand {
 }
 a.book_library_bl {
     border-bottom: 1px solid #80ae92;
-    padding: 50px 0px;
+    padding: 33px 0px;
+    &.hidden_ajax_grid {
+        display: none;
+    }
 }
 a.book_library_bl:last-child {
     border-bottom: none;
@@ -3034,6 +3041,7 @@ a.book_library_bl:last-child {
 .tabs_list_literator {
     padding: 0;
     list-style: none;
+    margin-left: 15px;
     li {
         min-width: 150px;
         display: inline-block;
@@ -3381,7 +3389,7 @@ a.book_library_bl:last-child {
     }
 }
 .my_video {
-    margin-top: 25px;
+    margin-top: 10px;
     iframe {
         width: 100%;
         height: 454px;
@@ -3871,6 +3879,9 @@ h2, .start_review_head {
             border-radius: 3px;;
         }
     }
+}
+.menu_and_btn {
+    height: auto;
 }
 .menu_link {
     display: none;
@@ -4397,6 +4408,11 @@ h2, .start_review_head {
     .carousel_option_item .item .book_option_info {
         padding: 5px 5px 0;
     }
+    .btn_buy_del {
+        a {
+            margin-right: 0px;
+        }
+    }
 }
 @media screen and (min-width: 515px) and (max-width: 560px) {
     .carousel_option_item .item .book_option_info {
@@ -4596,6 +4612,12 @@ h2, .start_review_head {
 }
 .txt_sample {
     padding: 0 45px;
+    p:last-child {
+        margin-bottom: 0px;
+    }
+    h2 {
+        margin: 33px 0;
+    }
 }
 //Adaptive parametr
 
@@ -4626,6 +4648,9 @@ h2, .start_review_head {
     }
     .type_book, .language_book {
         width: 100%;
+    }
+    .param_book_set_first {
+        margin-top: 10px;
     }
 }
 @media screen and (max-width: 850px) {
@@ -4729,6 +4754,9 @@ h2, .start_review_head {
     }
 }
 @media screen and (max-width: 1200px) {
+    .menu_and_btn {
+        height: 47px;
+    }
     .menu_link {
         display: none!important;
     }
@@ -4828,6 +4856,11 @@ h2, .start_review_head {
         float: none;
     }
 }
+.mobile_header_citate {
+    margin-top: 23px; 
+    margin-bottom: 13px;
+    display: none;
+}
 @media screen and (max-width: 1200px) {
     .history_bl {
         text-align: center;
@@ -4850,6 +4883,11 @@ h2, .start_review_head {
     }
 }
 @media screen and (min-width: 1200px) and (max-width: 1500px) {
+    .carousel_option_item_wish {
+        .item {
+            width: 20%;
+        }
+    }
     .genres_content, .main_ctl_genres {
         .tab-content {
             .carousel_option_item .item {
@@ -5512,7 +5550,7 @@ h2, .start_review_head {
                     height: 260px;
                 }
                 p {
-                    line-height: 1.4em;
+                    line-height: 1.5em;
                     font-style: italic;
                     margin-bottom: 0px;
                     font-size: 16px;
@@ -5549,6 +5587,9 @@ h2, .start_review_head {
 @media screen and (max-width: 600px) {
     .booklet, #citate_h2 {
         display: none;
+    }
+    .mobile_header_citate {
+        display: block;
     }
     #citate_carousel {
         display: block;
@@ -5604,6 +5645,7 @@ h2, .start_review_head {
         position: absolute;
         top: -40px;
         left: 25px;
+        font-weight: normal !important;
     }
 }
 @media screen and (max-width: 770px) {

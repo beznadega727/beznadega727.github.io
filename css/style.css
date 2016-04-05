@@ -186,10 +186,14 @@ header .container_full {
 }
 .btn_buy_del {
   position: relative;
+  width: 100%;
+  float: left;
 }
 .btn_buy_del a {
-  width: 30%;
-  height: 100%;
+  width: 35px;
+  margin-right: 5px;
+  height: 33px;
+  overflow: hidden;
 }
 .btn_buy_del a img {
   width: 1.5em;
@@ -484,7 +488,7 @@ header .container_full {
   margin-top: 115px;
   margin-left: 25px;
 }
-#left_menu ul li:nth-child(5) img {
+#left_menu ul li:nth-child(7) img {
   width: 130%;
 }
 #left_menu ul li:nth-child(8) img {
@@ -1075,8 +1079,8 @@ footer h4 {
   font-weight: 400;
 }
 .sortirov_bl {
-  padding-left: 40px;
-  padding-bottom: 25px;
+  padding-left: 25px;
+  padding-bottom: 8px;
   padding-top: 0px;
   float: left;
 }
@@ -2069,8 +2073,8 @@ select::-ms-expand {
   padding: 10px 25px;
 }
 .recently_bl {
-  padding-bottom: 40px;
-  margin-top: 20px;
+  padding-bottom: 23px;
+  margin-top: 33px;
   padding-top: 10px;
   background-image: -webkit-gradient(linear, left bottom, left bottom, color-stop(0, #13487A), color-stop(0.6, #437D67));
   background-image: -o-linear-gradient(left bottom, #13487A 0%, #437D67 60%);
@@ -2081,7 +2085,7 @@ select::-ms-expand {
 }
 .recently_bl h2 {
   color: #ffffff;
-  margin: 45px 0 50px !important;
+  margin: 23px 0 33px !important;
 }
 .recently_bl img {
   width: 100%;
@@ -2209,7 +2213,10 @@ select::-ms-expand {
 }
 a.book_library_bl {
   border-bottom: 1px solid #80ae92;
-  padding: 50px 0px;
+  padding: 33px 0px;
+}
+a.book_library_bl.hidden_ajax_grid {
+  display: none;
 }
 a.book_library_bl:last-child {
   border-bottom: none;
@@ -2857,6 +2864,7 @@ a.book_library_bl:last-child {
 .tabs_list_literator {
   padding: 0;
   list-style: none;
+  margin-left: 15px;
 }
 .tabs_list_literator li {
   min-width: 150px;
@@ -3186,7 +3194,7 @@ a.book_library_bl:last-child {
   background-position: 59px 0;
 }
 .my_video {
-  margin-top: 25px;
+  margin-top: 10px;
 }
 .my_video iframe {
   width: 100%;
@@ -3647,6 +3655,9 @@ h2 .start_article,
   -moz-border-radius: 3px;
   border-radius: 3px;
 }
+.menu_and_btn {
+  height: auto;
+}
 .menu_link {
   display: none;
   position: fixed;
@@ -4101,6 +4112,9 @@ h2 .start_article,
   .carousel_option_item .item .book_option_info {
     padding: 5px 5px 0;
   }
+  .btn_buy_del a {
+    margin-right: 0px;
+  }
 }
 @media screen and (min-width: 515px) and (max-width: 560px) {
   .carousel_option_item .item .book_option_info {
@@ -4292,6 +4306,12 @@ h2 .start_article,
 .txt_sample {
   padding: 0 45px;
 }
+.txt_sample p:last-child {
+  margin-bottom: 0px;
+}
+.txt_sample h2 {
+  margin: 33px 0;
+}
 @media screen and (max-width: 400px) {
   .sample_page .carousel-caption h1 {
     font-size: 25px;
@@ -4312,6 +4332,9 @@ h2 .start_article,
   .type_book,
   .language_book {
     width: 100%;
+  }
+  .param_book_set_first {
+    margin-top: 10px;
   }
 }
 @media screen and (max-width: 850px) {
@@ -4392,6 +4415,9 @@ h2 .start_article,
   }
 }
 @media screen and (max-width: 1200px) {
+  .menu_and_btn {
+    height: 47px;
+  }
   .menu_link {
     display: none!important;
   }
@@ -4483,6 +4509,11 @@ h2 .start_article,
     float: none;
   }
 }
+.mobile_header_citate {
+  margin-top: 23px;
+  margin-bottom: 13px;
+  display: none;
+}
 @media screen and (max-width: 1200px) {
   .history_bl {
     text-align: center;
@@ -4507,6 +4538,9 @@ h2 .start_article,
   }
 }
 @media screen and (min-width: 1200px) and (max-width: 1500px) {
+  .carousel_option_item_wish .item {
+    width: 20%;
+  }
   .genres_content .tab-content .carousel_option_item .item,
   .main_ctl_genres .tab-content .carousel_option_item .item {
     width: 20%;
@@ -5083,7 +5117,7 @@ h2 .start_article,
   height: 260px;
 }
 #citate_carousel > .carousel-inner > .item > .carousel-caption p {
-  line-height: 1.4em;
+  line-height: 1.5em;
   font-style: italic;
   margin-bottom: 0px;
   font-size: 16px;
@@ -5118,6 +5152,9 @@ h2 .start_article,
   .booklet,
   #citate_h2 {
     display: none;
+  }
+  .mobile_header_citate {
+    display: block;
   }
   #citate_carousel {
     display: block;
@@ -5172,6 +5209,7 @@ h2 .start_article,
   position: absolute;
   top: -40px;
   left: 25px;
+  font-weight: normal !important;
 }
 @media screen and (max-width: 770px) {
   .citate_div_header h2 {
