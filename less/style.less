@@ -160,7 +160,7 @@ header {
     width: 15px;
     height: 75px;
     position: absolute;
-    left: 8px;
+    left: 0;
     right: 0;
     top: -8px;
     margin: auto;
@@ -4659,6 +4659,9 @@ h2, .start_review_head {
     }
 }
 @media screen and (max-width: 600px) {
+    .bl_opis_book_mob {
+        padding-bottom: 20px;
+    }
     .container_full > .row > .col-xs-12 > .col-xs-12 h2 {
         margin-top: 10px;
         margin-bottom: 5px;
@@ -4726,6 +4729,9 @@ h2, .start_review_head {
     }
 }
 @media screen and (max-width: 1200px) {
+    .menu_link {
+        display: none!important;
+    }
     #search_bl {
         border-bottom: none;
     }
@@ -5515,10 +5521,14 @@ h2, .start_review_head {
         top: -20px;
     }
     .glyphicon-chevron-left::before {
-        background: rgba(0, 0, 0, 0) url("../img/arrow_slide_left_black.png") no-repeat scroll 0 0 / cover
+        background: rgba(0, 0, 0, 0) url("../img/arrow_slide_left_black.png") no-repeat;
+        background-size: cover;
+        opacity: 0.6;
     }
     .glyphicon-chevron-right::before {
-        background: rgba(0, 0, 0, 0) url("../img/arrow_slide_right_black.png") no-repeat scroll 0 0 / cover
+        background: rgba(0, 0, 0, 0) url("../img/arrow_slide_right_black.png") no-repeat;
+        background-size: cover;
+        opacity: 0.6;
     }
     .carousel-control {
         .glyphicon {
