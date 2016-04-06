@@ -1,6 +1,6 @@
 @import url(https://fonts.googleapis.com/css?family=Exo+2:300,400,500,700);
 @import url(https://fonts.googleapis.com/css?family=Roboto:400,500,300,700,100);
-@import url(https://fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic);
+@import url(http://fonts.googleapis.com/css?family=PT+Sans&subset=all);
 
 //html,body {
 //  height: 100%;
@@ -1349,6 +1349,28 @@ p.top_tat_book_bl_off {
         -ms-transition: all 0.3s;
         -o-transition: all 0.3s;
         transition: all 0.3s;
+        .stars_book_option {
+            .glyphicon-star:before {
+                background: url("../img/star_ico_white.svg") no-repeat;
+                content: "";
+                height: 18px;
+                width: 18px;
+                position: relative;
+                float: left;
+                background-size: 105%;
+                top: 0.5px;
+            }
+            .glyphicon-star-empty:before {
+                background: url("../img/star_true_ico_white.svg") no-repeat;
+                content: "";
+                height: 18px;
+                width: 18px;
+                position: relative;
+                float: left;
+                background-size: 105%;
+                top: 0.5px;
+            }
+        }
     }
     .btn_link_opt {
         position: absolute;
@@ -2015,6 +2037,7 @@ select::-ms-expand {
         color: #ffffff;
         font-size: 20px;
         padding: 0;
+        margin-right: 105px;
         .click_btn {
             float: left;
             position: relative;
@@ -2104,6 +2127,11 @@ select::-ms-expand {
     margin: auto 0;
     height: 25px;
     font-size: 18px;
+}
+.quont-minus.btn {
+    font-size: 33px!important;
+    font-weight: 400!important;
+    margin-top: 2px!important;
 }
 .quont-minus.btn,.quont-plus.btn {
     line-height: 40px;
@@ -2224,7 +2252,7 @@ select::-ms-expand {
     padding: 10px 25px;
 }
 .recently_bl {
-    padding-bottom: 23px;
+    padding-bottom: 33px;
     margin-top: 33px;
     padding-top: 10px;
     background-image: -webkit-gradient(
@@ -2916,10 +2944,10 @@ a.book_library_bl:last-child {
         font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
         //font-family: 'Exo 2', sans-serif;
         font-style: italic;
-        margin-bottom: 30px;
+        margin-bottom: 21px;
         margin-top: 10px;
         letter-spacing: -0.5px;
-        //font-weight: 100;
+        line-height: 35px;
     }
 }
 .b-page {
@@ -3182,6 +3210,8 @@ a.book_library_bl:last-child {
                 padding: 7px;
                 font-size: 21px;
                 font-family: 'Roboto', sans-serif;
+                height: 44.6px;
+                border-radius: 4px;
                 &:hover {
                     background: transparent url("../img/gray_arrow_select.png") no-repeat scroll 91% 50%;
                     color: #000;
@@ -3295,7 +3325,7 @@ a.book_library_bl:last-child {
     }
     .title_info_book {
         font-size: 25px;
-        font-weight: bold;
+        //font-weight: bold;
         margin-top: 33px;
         margin-bottom: 33px;
     }
@@ -4256,6 +4286,26 @@ h2, .start_review_head {
 .view_list_book {
     float: right;
     padding-top: 25px;
+    .select-style {
+        background: transparent url("../img/gray_arrow_select.png") no-repeat 91% 50%;
+        select {
+            padding: 7px 30px 7px 8px;
+            height: 43px;
+            font-family: Roboto, sans-serif;
+            font-weight: 300;
+            width: 100%;
+            border: none;
+            box-shadow: none;
+            background-color: transparent;
+            background-image: none;
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            appearance: none;
+            font-size: 21px;
+            cursor: pointer;
+        }
+    }
+
 }
 .tabs_genre {
     list-style: none;

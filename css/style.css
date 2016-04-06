@@ -1,6 +1,6 @@
 @import url(https://fonts.googleapis.com/css?family=Exo+2:300,400,500,700);
 @import url(https://fonts.googleapis.com/css?family=Roboto:400,500,300,700,100);
-@import url(https://fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic);
+@import url(http://fonts.googleapis.com/css?family=PT+Sans&subset=all);
 body {
   color: #000000;
   display: none;
@@ -1263,6 +1263,26 @@ p.top_tat_book_bl_off {
   -o-transition: all 0.3s;
   transition: all 0.3s;
 }
+.btn_book_opt .book_option_info .stars_book_option .glyphicon-star:before {
+  background: url("../img/star_ico_white.svg") no-repeat;
+  content: "";
+  height: 18px;
+  width: 18px;
+  position: relative;
+  float: left;
+  background-size: 105%;
+  top: 0.5px;
+}
+.btn_book_opt .book_option_info .stars_book_option .glyphicon-star-empty:before {
+  background: url("../img/star_true_ico_white.svg") no-repeat;
+  content: "";
+  height: 18px;
+  width: 18px;
+  position: relative;
+  float: left;
+  background-size: 105%;
+  top: 0.5px;
+}
 .btn_book_opt .btn_link_opt {
   position: absolute;
   left: 0;
@@ -1863,6 +1883,7 @@ select::-ms-expand {
   color: #ffffff;
   font-size: 20px;
   padding: 0;
+  margin-right: 105px;
 }
 .group_ord_btn .btn .click_btn {
   float: left;
@@ -1952,6 +1973,11 @@ select::-ms-expand {
   margin: auto 0;
   height: 25px;
   font-size: 18px;
+}
+.quont-minus.btn {
+  font-size: 33px!important;
+  font-weight: 400!important;
+  margin-top: 2px!important;
 }
 .quont-minus.btn,
 .quont-plus.btn {
@@ -2073,7 +2099,7 @@ select::-ms-expand {
   padding: 10px 25px;
 }
 .recently_bl {
-  padding-bottom: 23px;
+  padding-bottom: 33px;
   margin-top: 33px;
   padding-top: 10px;
   background-image: -webkit-gradient(linear, left bottom, left bottom, color-stop(0, #13487A), color-stop(0.6, #437D67));
@@ -2753,9 +2779,10 @@ a.book_library_bl:last-child {
   color: #000000;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-style: italic;
-  margin-bottom: 30px;
+  margin-bottom: 21px;
   margin-top: 10px;
   letter-spacing: -0.5px;
+  line-height: 35px;
 }
 .booklet {
   margin-bottom: 0px !important;
@@ -3001,6 +3028,8 @@ a.book_library_bl:last-child {
   padding: 7px;
   font-size: 21px;
   font-family: 'Roboto', sans-serif;
+  height: 44.6px;
+  border-radius: 4px;
 }
 .top_tat_book_bl .param_list_slide .select-style.custom-select-style .dropdown-toggle:hover {
   background: transparent url("../img/gray_arrow_select.png") no-repeat scroll 91% 50%;
@@ -3106,7 +3135,6 @@ a.book_library_bl:last-child {
 }
 .book_descript .title_info_book {
   font-size: 25px;
-  font-weight: bold;
   margin-top: 33px;
   margin-bottom: 33px;
 }
@@ -3981,6 +4009,25 @@ h2 .start_article,
 .view_list_book {
   float: right;
   padding-top: 25px;
+}
+.view_list_book .select-style {
+  background: transparent url("../img/gray_arrow_select.png") no-repeat 91% 50%;
+}
+.view_list_book .select-style select {
+  padding: 7px 30px 7px 8px;
+  height: 43px;
+  font-family: Roboto, sans-serif;
+  font-weight: 300;
+  width: 100%;
+  border: none;
+  box-shadow: none;
+  background-color: transparent;
+  background-image: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  font-size: 21px;
+  cursor: pointer;
 }
 .tabs_genre {
   list-style: none;
