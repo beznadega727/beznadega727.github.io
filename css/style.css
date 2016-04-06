@@ -115,7 +115,7 @@ header .container_full {
   width: 100%;
 }
 .content_bl {
-  padding-left: 88px;
+  padding-left: 87px;
 }
 .title_video {
   margin-top: 30px;
@@ -4168,6 +4168,12 @@ h2 .start_article,
     padding: 5px 5px 0;
   }
 }
+@media screen and (min-width: 615px) and (max-width: 770px) {
+  .main_ctl_genres .carousel_option_item > .item,
+  .carousel_option_item_wish > .item {
+    width: 50%;
+  }
+}
 @media screen and (min-width: 715px) and (max-width: 770px) {
   .carousel_option_item .item .book_option_info {
     padding: 5px 5px 0;
@@ -4360,6 +4366,14 @@ h2 .start_article,
   margin: 33px 0;
 }
 @media screen and (max-width: 400px) {
+  .deferred_book_btn {
+    margin: 0 -20px !important;
+    overflow: hidden;
+  }
+  .book_review_bl .price_book_ord {
+    width: 100%;
+    text-align: left;
+  }
   .sample_page .carousel-caption h1 {
     font-size: 25px;
     padding-top: 5px;
@@ -4373,9 +4387,9 @@ h2 .start_article,
   }
 }
 @media screen and (max-width: 770px) {
-  .sortirov_bl {
-    padding-top: 25px;
-  }
+  /*.sortirov_bl {
+        padding-top: 25px;
+    }*/
   .type_book,
   .language_book {
     width: 100%;
@@ -4707,6 +4721,18 @@ h2 .start_article,
     padding-bottom: 34px;
   }
 }
+@media screen and (max-width: 640px) {
+  .view_list_book.list_rec {
+    margin-top: 0px;
+    padding-top: 0px;
+  }
+  .view_list_book.list_rec ul.btn-group {
+    float: none !important;
+    margin: 0 auto;
+    padding-left: 0px;
+    padding-top: 10px;
+  }
+}
 @media screen and (max-width: 970px) {
   .view_list_book {
     display: block;
@@ -4714,6 +4740,15 @@ h2 .start_article,
     float: none;
     width: 100%;
     overflow: hidden;
+  }
+  .view_list_book.list_rec {
+    margin-left: -20px;
+  }
+  .view_list_book.list_rec .sortirov_bl {
+    padding-left: 0px;
+  }
+  .view_list_book.list_rec ul.btn-group {
+    float: left;
   }
 }
 @media screen and (max-width: 768px) {
@@ -5280,6 +5315,9 @@ h2 .start_article,
   font-weight: normal !important;
 }
 @media screen and (max-width: 770px) {
+  .history_bl .group_ord_btn a.btn {
+    margin-right: 0px;
+  }
   .citate_div_header h2 {
     position: static;
     margin-left: 0px !important;
@@ -5292,4 +5330,10 @@ h2 .start_article,
     margin-left: 10px !important;
     margin-top: 10px !important;
   }
+}
+.deferred_book_btn {
+  margin-left: 10px;
+}
+.deferred_book_btn a.btn {
+  margin: 0px;
 }
