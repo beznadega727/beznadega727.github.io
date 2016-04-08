@@ -319,10 +319,10 @@ header {
         background-color: transparent;
         border: none;
         min-width: 170px;
-        width: 0;
         outline: none;
         text-align: left;
-        /*max-width: 220px;*/
+        width: 395px!important;
+        max-width: 395px;
         &::-webkit-input-placeholder {color:#ffffff; opacity: 0.5;}
         &::-moz-placeholder          {color:#ffffff;}/* Firefox 19+ */
         &:-moz-placeholder           {color:#ffffff;}/* Firefox 18- */
@@ -332,7 +332,7 @@ header {
         vertical-align: 5px;
         font-size: 17px;
         color: #ffffff;
-        border: 1px solid #ffffff!important;
+        border: 1px solid #ffffff;
         width: auto!important;
         padding: 6px 13px;
         display: inline-block!important;
@@ -352,8 +352,9 @@ header {
             -ms-transition: all 0.3s;
             -o-transition: all 0.3s;
             transition: all 0.3s;
-            color: #5a7864;
-            border: 1px solid #a5c7b7;
+            color: #ffffff;
+            border: 1px solid rgba(255, 255, 255, 0.60);
+            background-color: transparent;
         }
         &[disabled] {
             background: transparent;
@@ -1256,6 +1257,11 @@ p.top_tat_book_bl_off {
 .top_tat_book_bl {
     padding: 0 45px;
     margin: 0px 5px 13px;
+    .carousel_option_item {
+        .item {
+            padding: 0 10px;
+        }
+    }
     p {
         font-family: "Exo 2",sans-serif;
         font-size: 20px;
@@ -2039,11 +2045,16 @@ select::-ms-expand {
         padding: 0;
         margin-right: 105px;
         .click_btn {
-            float: left;
+            float: right;
             position: relative;
             display: inline-block;
             padding: 10px 20px;
             font-size: 26px;
+        }
+        .price_book {
+            padding: 10px 30px;
+            float: left;
+            position: relative;
             &:after {
                 content: "";
                 background: url("../img/arrow_blue_btn.png") no-repeat;
@@ -2053,9 +2064,6 @@ select::-ms-expand {
                 right: 0;
                 top: -1px;
             }
-        }
-        .price_book {
-            padding: 10px 30px;
         }
         .price_book, .price_book span{
             color: #ffffff;
@@ -2289,6 +2297,9 @@ select::-ms-expand {
     .btn {
         margin: 25px 0;
     }
+}
+.citat_block {
+    background-color: #ebece6;
 }
 .citate_inf_bl {
     background-color: #d6e5de;
@@ -3317,8 +3328,9 @@ a.book_library_bl:last-child {
         margin-left: 53px;
     }
     .img_book {
-        margin: 0 -30px;
-        padding-right: 0px;
+        //margin: 0 -30px;
+        //padding-right: 0px;
+        padding-left: 0;
         img {
             width: 100%;
         }
@@ -3360,6 +3372,7 @@ a.book_library_bl:last-child {
 
         p {
             color: #9cacb7;
+            margin-top: 7px;
         }
         &.active {
             -webkit-filter: grayscale(0%);
@@ -5064,6 +5077,15 @@ h2, .start_review_head {
     }
 }
 @media screen and (max-width: 620px) {
+    .tab-pane .top_tat_book_bl {
+        padding: 0;
+    }
+    .sortirov_bl {
+        width: 100%;
+        .select-style {
+            width: 100%;
+        }
+    }
     .pager, .list_rec {
         display: block;
         margin-right: 0px;
