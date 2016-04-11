@@ -798,6 +798,20 @@ header .padd_content {
     //margin-right: 40px;
     float: right;
 }
+.login_basket {
+    .nav_link_header {
+        li {
+            a {
+                line-height: 48px;
+            }
+        }
+    }
+}
+.div_link_head {
+    .nav_link_header:nth-child(1) {
+        margin-bottom: 0;
+    }
+}
 footer {
     &.footer_no_botton {
         margin-top: 0px;
@@ -1257,6 +1271,15 @@ p.top_tat_book_bl_off {
 .top_tat_book_bl {
     padding: 0 45px;
     margin: 0px 5px 13px;
+    &.top_tat_book_bl_adap {
+        padding: 0 45px!important;
+        .carousel_option_item {
+            .item {
+                padding: 0 10px;
+            }
+        }
+    }
+
     .carousel_option_item {
         .item {
             padding: 0 10px;
@@ -1273,6 +1296,9 @@ p.top_tat_book_bl_off {
     .owl-carousel {
         margin-top: 11px;
         float: left;
+        .item{
+            padding: 0 0;
+        }
         .owl-buttons {
             position: absolute;
             width: 100%;
@@ -2050,6 +2076,9 @@ select::-ms-expand {
             display: inline-block;
             padding: 10px 20px;
             font-size: 26px;
+            br {
+                display: none;
+            }
         }
         .price_book {
             padding: 10px 30px;
@@ -2299,7 +2328,7 @@ select::-ms-expand {
     }
 }
 .citat_block {
-    background-color: #ebece6;
+    //background-color: #ebece6;
 }
 .citate_inf_bl {
     background-color: #d6e5de;
@@ -2455,6 +2484,16 @@ a.book_library_bl:last-child {
     -webkit-border-radius: 0;
     -moz-border-radius: 0;
     border-radius: 0;
+    .param_list_slide {
+        .select-style {
+            background: #d6e5de url("../img/gray_arrow_select.png") no-repeat 96% 50%;
+            margin-bottom: 6px;
+            min-width: 205px;
+            select {
+                font-size: 17px;
+            }
+        }
+    }
     &:last-child {
         border-bottom: 0;
     }
@@ -2969,7 +3008,7 @@ a.book_library_bl:last-child {
 .booklet {
     margin-bottom: 0px !important;
     //margin-left: -15px !important;
-    padding-left: 15px;
+    //padding-left: 15px;
     background-color: #ebece6;
     .b-arrow-next {
         right: 2px!important;
@@ -2996,9 +3035,9 @@ a.book_library_bl:last-child {
 .booklet .b-wrap-left {
     //border-right: 1px solid #adaea8;
     background: url("../img/left_list_book.jpg")no-repeat right;
-    background-size: cover;
+    background-size: 97.5% 100%;
     //width: 101%!important;
-    /*margin-left: 20px;*/
+    //margin-left: 15px;
     padding-left: 80px!important;
     padding-right: 50px!important;
     padding-top: 30px!important;
@@ -3015,7 +3054,8 @@ a.book_library_bl:last-child {
 .booklet .b-wrap-right {
     border-left: 1px solid #adaea8;
     background: url("../img/right_list_book.jpg")no-repeat left;
-    background-size: cover;
+    background-size: 97.5% 100%;
+    //margin-right: 15px;
     padding-right:80px!important;
     padding-left: 50px!important;
     padding-top: 30px!important;
@@ -4522,6 +4562,14 @@ h2, .start_review_head {
                 text-decoration: none!important;
                 border: 1px solid rgba(128, 174, 146, 0.71);
                 color: #056233;
+                span {
+                    border-bottom: 1px solid transparent;
+                    -webkit-transition: 0.1s all;
+                    -moz-transition: 0.1s all;
+                    -ms-transition: 0.1s all;
+                    -o-transition: 0.1s all;
+                    transition: 0.1s all;
+                }
             }
         }
         a {
@@ -4540,11 +4588,23 @@ h2, .start_review_head {
             font-family: "Exo 2",sans-serif;
             font-weight: 500;
             padding: 6px 20px;
-            text-decoration: underline;
+            position: relative;
             &:hover,&:active,&:focus {
                 text-decoration: none!important;
                 border: 1px solid rgba(128, 174, 146, 0.71);
+                span {
+                    border-bottom: 1px solid transparent;
+                    -webkit-transition: 0.1s all;
+                    -moz-transition: 0.1s all;
+                    -ms-transition: 0.1s all;
+                    -o-transition: 0.1s all;
+                    transition: 0.1s all;
+                }
 
+            }
+            span {
+                border-bottom: 1px solid rgba(159, 159, 159, 0.5);
+                padding-bottom: 1px;
             }
         }
     }
@@ -4941,6 +5001,28 @@ h2, .start_review_head {
     margin-bottom: 13px;
     display: none;
 }
+@media screen and (max-width: 1615px) {
+    .top_tat_book_bl {
+        &.top_tat_book_bl_adap {
+            .carousel_option_item {
+                .item {
+                    width: 20%;
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width: 1416px) {
+    .top_tat_book_bl {
+        &.top_tat_book_bl_adap {
+            .carousel_option_item {
+                .item {
+                    width: 25%;
+                }
+            }
+        }
+    }
+}
 @media screen and (max-width: 1200px) {
     .history_bl {
         text-align: center;
@@ -4993,6 +5075,17 @@ h2, .start_review_head {
             width: 20%;
         }
 
+    }
+}
+@media screen and (max-width: 916px) {
+    .top_tat_book_bl {
+        &.top_tat_book_bl_adap {
+            .carousel_option_item {
+                .item {
+                    width: 33.333%;
+                }
+            }
+        }
     }
 }
 @media screen and (min-width: 768px) and (max-width: 1250px) {
@@ -5076,6 +5169,17 @@ h2, .start_review_head {
         }
     }
 }
+@media screen and (max-width: 715px) {
+    .top_tat_book_bl {
+        &.top_tat_book_bl_adap {
+            .carousel_option_item {
+                .item {
+                    width: 50%;
+                }
+            }
+        }
+    }
+}
 @media screen and (max-width: 620px) {
     .tab-pane .top_tat_book_bl {
         padding: 0;
@@ -5096,6 +5200,17 @@ h2, .start_review_head {
         .tab-content {
             .item {
                 padding: 50px;
+            }
+        }
+    }
+}
+@media screen and (max-width: 516px) {
+    .top_tat_book_bl {
+        &.top_tat_book_bl_adap {
+            .carousel_option_item {
+                .item {
+                    width: 100%;
+                }
             }
         }
     }
@@ -5435,6 +5550,25 @@ h2, .start_review_head {
     .param_list_slide2 {
         .sortirov_bl {
             padding: 0 0 0 35px;
+        }
+    }
+}
+@media screen and (max-width: 540px) {
+    .deferred_book_btn {
+        .group_ord_btn .btn {
+            .price_book {
+                padding: 28px 30px;
+                &:after {
+                    background-size: cover;
+                    width: 24px;
+                }
+            }
+            .click_btn {
+                text-align: left;
+                br {
+                    display: block;
+                }
+            }
         }
     }
 }
