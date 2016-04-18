@@ -250,7 +250,7 @@ $(document).ready(function() {
                 }, 300
             );
             $(this).removeClass('active');
-            $('body,html').css("overflow","visible");
+            $('body,html').css("overflow","visible").removeClass('menu_visible');
              $('.menu_link').fadeOut('100');
             $('body').css({'padding-right':'0'});
             $('#left_menu').removeClass('border_menu');
@@ -264,7 +264,7 @@ $(document).ready(function() {
             );
             $(this).addClass('active');
             $('.menu_link').fadeIn('100');
-            $('body,html').css("overflow","hidden");
+            $('body,html').css("overflow","hidden").addClass('menu_visible');
             $('body').css({'padding-right':'17px'});
             $('.logo_bl').addClass('logo_index');
             $('#left_menu').addClass('border_menu');

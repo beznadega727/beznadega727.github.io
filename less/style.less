@@ -3817,6 +3817,23 @@ h2, .start_review_head {
         }
     }
 }
+.popup-form {
+   .form-control {
+       border: 1px solid transparent;
+       border-bottom: 1px solid #abc9b8;
+       -webkit-box-shadow: none;
+       -moz-box-shadow: none;
+       box-shadow: none;
+       -webkit-border-radius: 0;
+       -moz-border-radius: 0;
+       border-radius: 0;
+   }
+}
+.menu_visible {
+    .popover.fade.right.in {
+        display: none !important;
+    }
+}
 .options_block {
     display: none;
     .param_list_slide {
@@ -3856,12 +3873,12 @@ h2, .start_review_head {
     width: 560px;
     left: 0;
     height: 100% !important;
-    background-color: #f4f8f7;
+    //background-color: #f4f8f7;
     position: fixed;
     overflow-y: auto;
     padding: 252px 0 70px;
     z-index: 12;
-    box-shadow: 5px 0 21px 4px rgba(37, 37, 37, 0.52);
+    //box-shadow: 5px 0 21px 4px rgba(37, 37, 37, 0.52);
     .mobil_menu {
         display: none;
         .nav_link_1 {
@@ -3970,12 +3987,39 @@ h2, .start_review_head {
     display: none;
     position: fixed;
     left: 0;
-    z-index: 15;
-    width: 615px;
-    top: 246px;
+    z-index: 14;
+    //width: 615px;
+    width: 520px;
+    top: 160px;
+    background-color: #ffffff;
+    padding-left: 106px;
+    padding-top: 29px;
+    box-shadow: 5px 0 21px 4px rgba(37, 37, 37, 0.52);
     //top: 185px;
+    &:after {
+        content: "";
+        position: absolute;
+        left: 86px;
+        top: 0;
+        bottom: 0;
+        width: 2px;
+        background-color: rgba(163, 163, 163, 0.21);
+        height: 100%;
+    }
+    .btn-group {
+        margin-bottom: 20px;
+        a {
+            border: 1px solid #b2cebe;
+            color: #015e27;
+            font-weight: bold;
+            font-family: "Exo 2", sans-serif;
+            padding: 7px 8px;
+
+        }
+    }
     .select-style {
-        background: #f4f8f7;
+        background: #ffffff;
+        border-color: #b2cebe;
         &:after {
             content: "";
             border-left: 5px solid transparent;
@@ -3992,9 +4036,9 @@ h2, .start_review_head {
     .language_link.select-style {
         position: relative;
         width: 208px;
-        margin-left: 85px;
+        margin-left: 0;
         select {
-            height: 42px;
+            height: 38px;
             color: #015e27;
             font-weight: bold;
             font-family: "Exo 2", sans-serif;
@@ -4003,9 +4047,14 @@ h2, .start_review_head {
         }
     }
     .menu_style {
+        margin-left: -106px;
         > div {
             padding-top: 7px;
-            width: 50% !important;
+            width: 44% !important;
+            &:first-child {
+                width: 56%!important;
+                padding-right: 0;
+            }
         }
         ul {
             li:nth-child(2) {
@@ -4072,13 +4121,14 @@ h2, .start_review_head {
     }
     > div {
         padding-top: 15px;
+        padding-left: 0;
         //border: 1px solid #aac9b8;
         border-left: 0;
         &.col-xs-2 {
             width: 323px;
         }
         > .tab-content {
-            height: 355px;
+            height: 330px;
         }
         &:first-child {
             ul {
@@ -4119,9 +4169,9 @@ h2, .start_review_head {
                 //height: 51px;
                 img {
                     width: 40px;
-                    margin-right: 25px;
                     display: inline-block;
                     float: left;
+                    margin-right: 42px;
                 }
                 span {
                     display: inline-block;
@@ -4789,6 +4839,12 @@ h2, .start_review_head {
     .type_book, .language_book {
         width: 100%;
     }
+    .language_book {
+        padding-left: 40px;
+        .select-style {
+            width: 85%;
+        }
+    }
     .param_book_set_first {
         margin-top: 10px;
     }
@@ -4824,6 +4880,17 @@ h2, .start_review_head {
     }
 }
 @media screen and (max-width: 600px) {
+    .top_tat_book_bl {
+        padding: 0 5px;
+        .owl-carousel .owl-buttons {
+            .owl-next {
+                margin-right: -25px;
+            }
+            .owl-prev {
+                margin-left: -27px;
+            }
+        }
+    }
     .bl_opis_book_mob {
         padding-bottom: 33px;
     }
@@ -5940,6 +6007,9 @@ h2, .start_review_head {
             margin-left: 10px !important;
             margin-top: 10px !important;
         }
+    }
+    .carousel_option_item .item .book_option_info {
+        padding: 10px 5px 0 15px;
     }
 }
 .deferred_book_btn {
