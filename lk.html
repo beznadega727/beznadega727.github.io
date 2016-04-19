@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en" >
-    <head>
+        <head>         <link href="img/favicon.png" rel="shortcut icon" type="image/png" />
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -49,6 +49,15 @@
                                         stroke: #015E27;
                                         stroke-width: 3;
                                     }
+                                    .tab-pane .top_tat_book_bl {
+                                        padding: 0px;
+                                    }
+                                    .top_tat_book_bl .param_list_slide {
+                                        margin-left: -20px;
+                                    }
+                                    .view_list_book {
+                                        margin-right: -20px;
+                                    }
                                 </style>
                                 <g>
                                 <defs>
@@ -78,7 +87,7 @@
                         </a>
                     </li>
                     <li>
-                        <a href="/genres.html" data-container="body" data-toggle="popover" data-placement="right" data-content="Детские  &#10; книги">
+                        <a href="/genres.html" data-container="body" data-toggle="popover" data-placement="right" data-content="Детская  &#10; литература">
                             <img src="img/4.svg" alt="">
                         </a>
                     </li>
@@ -88,7 +97,7 @@
                         </a>
                     </li>
                     <li>
-                        <a href="/genres.html" data-container="body" data-toggle="popover" data-placement="right" data-content="Классика">
+                        <a href="/genres.html" data-container="body" data-toggle="popover" data-placement="right" data-content="Классическая  &#10; литература">
                             <img src="img/2.svg" alt="">
                         </a>
                     </li>
@@ -101,30 +110,84 @@
             </div>
             <div class="menu_link">
                 <div class="row">
-                    <div class="col-xs-4">
-                        <div class="language_link select-style" style="margin-bottom: 10px;">
-                            <select>
-                                <option>Татар теле</option>
-                                <option>Русский</option>
-                                <option>Tatar latin</option>
-                                <option>English</option>
-                            </select>
+                    <div class="col-xs-12">
+                        <a href="javascript: void(0);" class="searsh_btn left_btn_menu active" data-container="body" data-toggle="popover" data-placement="right" data-content="Меню">
+                            <svg version="1.1" id="Слой_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                     viewBox="0 0 30 27.8" style="enable-background:new 0 0 30 27.8;" xml:space="preserve">
+                                <style type="text/css">
+                                    .st0 {
+                                        clip-path: url(#SVGID_2_);
+                                        fill: none;
+                                        stroke: #015E27;
+                                        stroke-width: 3;
+                                    }
+                                    .tab-pane .top_tat_book_bl {
+                                        padding: 0px;
+                                    }
+                                    .top_tat_book_bl .param_list_slide {
+                                        margin-left: -20px;
+                                    }
+                                    .view_list_book {
+                                        margin-right: -20px;
+                                    }
+                                </style>
+                                <g>
+                                <defs>
+                                <rect id="SVGID_1_" y="0" width="30" height="27.8"/>
+                                </defs>
+                                <clipPath id="SVGID_2_">
+                                    <use xlink:href="#SVGID_1_"  style="overflow:visible;"/>
+                                </clipPath>
+                                <line class="st0" x1="0" y1="1.5" x2="30" y2="1.5"/>
+                                <line class="st0" x1="0" y1="13.9" x2="30" y2="13.9"/>
+                                <line class="st0" x1="0" y1="26.3" x2="30" y2="26.3"/>
+                                </g>
+                                </svg>
+                        </a>
+
+                        <div class="btn-group">
+                            <a href="#" class="btn header_btn ">Беседы читателей</a>
+                            <a href="#" class="btn header_btn ">События</a>
+                            <a href="#" class="btn header_btn ">Спец проекты</a>
                         </div>
-                        <!--<ul class="language_link">-->
-                        <!--<li class="active"><a href="#">Татар теле</a> </li>-->
-                        <!--<li><a href="#">English</a> </li>-->
-                        <!--<li><a href="#">Русский язык</a> </li>-->
-                        <!--<li><a href="#">Tatar Latin</a> </li>-->
-                        <!--</ul>-->
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-4">
+                                <a class="language_ico" href="javascript: void(0);">
+                                    <img src="img/flag.jpg" alt="">
+                                </a>
+
+                                <div class="language_link param_list_slide" style="margin-bottom: 10px;">
+                                    <div class="btn-group" style="margin-bottom: 0px;">
+                                        <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+                                            <span>Татар теле</span>
+                                        </button>
+                                        <ul class="dropdown-menu list-inline stars_book_option" role="menu">
+                                            <li>
+                                                <span>Татар теле</span>
+                                            </li>
+                                            <li>
+                                                <span>Русский</span>
+                                            </li>
+                                            <li>
+                                                <span>Tatar latin</span>
+                                            </li>
+                                            <li>
+                                                <span>English</span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
                     </div>
                 </div>
                 <div class="row menu_style">
                     <div class="col-xs-2">
                         <ul role="tablist">
-                            <li role="presentation" class="active"><a  href="#nav_1"  role="tab" data-toggle="tab"><img src="img/1.svg" alt=""><span>Учебная литература</span></a> </li>
-                            <li role="presentation"><a  href="#nav_2"  role="tab" data-toggle="tab"><img src="img/2.svg" alt=""><span> Детские книги</span></a> </li>
-                            <li role="presentation"><a  href="#nav_3"  role="tab" data-toggle="tab"><img src="img/3.svg" alt="" style="    margin-top: -5px;"><span>Современная литература</span></a> </li>
-                            <li role="presentation"><a  href="#nav_4"  role="tab" data-toggle="tab"><img src="img/4.svg" alt=""><span>Классика</span></a> </li>
+                            <li role="presentation" class="active"><a  href="#nav_1"  role="tab" data-toggle="tab"><img src="img/3.svg" alt=""><span>Учебная литература</span></a> </li>
+                            <li role="presentation"><a  href="#nav_2"  role="tab" data-toggle="tab"><img src="img/4.svg" alt=""><span> Детские книги</span></a> </li>
+                            <li role="presentation"><a  href="#nav_3"  role="tab" data-toggle="tab"><img src="img/1.svg" alt="" style=""><span>Современная литература</span></a> </li>
+                            <li role="presentation"><a  href="#nav_4"  role="tab" data-toggle="tab"><img src="img/2.svg" alt=""><span>Классика</span></a> </li>
                             <li role="presentation"><a  href="#nav_5"  role="tab" data-toggle="tab"><img src="img/5.svg" alt=""><span>Интерактивные книги</span></a> </li>
                         </ul>
                     </div>

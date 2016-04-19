@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en" >
-    <head>
+        <head>         <link href="img/favicon.png" rel="shortcut icon" type="image/png" />
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -13,9 +13,90 @@
         <link href="owl-carousel/owl.theme.css" rel="stylesheet">
         <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
         <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-
+        <script src="https://api-maps.yandex.ru/2.1/?lang=ru-RU" type="text/javascript"> </script>
     </head>
     <body class="animated fadeIn " >
+        <style type="text/css">
+            .stars_book_option {
+                background: #e5eee9 !important;
+                border: none !important;
+                border-radius: 0px !important;
+            }
+            .stars_book_option li table {
+                width: 100%;
+            }
+            .stars_book_option li {
+                width: 100%;
+                overflow: hidden;
+                padding: 0px !important;
+            }
+            .stars_book_option li td:nth-child(1) {
+                width: 52%;
+            }
+            .stars_book_option li td:nth-child(2) {
+                width: 29%;
+            }
+            .stars_book_option li td:nth-child(3) {
+                width: 19%;
+            }
+            .stars_book_option li td span {
+                font-family: "PT Sans",serif !important;
+            }
+            .stars_book_option li table.bottom_none td {
+                border-bottom: none;
+            }
+            .stars_book_option li td {
+                padding: 5px 8px !important;
+                border: 1px solid #80ae92;
+            }
+            .select-style1 .select2-container--default {
+                width: 100% !important;
+            }
+            .select-style1 .select2-container--default .select2-selection--single {
+                height: 52px;
+                padding: 10px 8px;
+                font-size: 21px;
+                background: #e5eee9;
+                border-color: #80ae92;
+            }
+            .select-style1 .select2-container--default .select2-selection--single .select2-selection__rendered {
+                color: #000;
+            }
+            .select-style1 .select2-container--default.select2-container--open .select2-selection--single .select2-selection__arrow b {
+                border-color: transparent transparent #333;
+            }
+            .select-style1 .select2-container--default .select2-selection--single .select2-selection__arrow b {
+                border-color: #333 transparent transparent;
+            }
+            .select-style1 .select2-container--default .select2-selection--single .select2-selection__arrow {
+                top: 12px; 
+                right: 7px;
+            }
+            .select2-container--open .select2-dropdown {
+                background: #e5eee9 !important;
+            }
+            .select2-results__option {
+                padding: 0 3px !important;
+                font-size: 21px;
+            }
+            .select2-search--dropdown .select2-search__field {
+                background: #e5eee9 !important;
+            }
+            .use_my {
+                font-size: 21px;
+                padding: 8px 16px;
+                margin: 0px;
+            }
+            .cureer, .pochta, .pickup {
+                display: none;
+            }
+            .bl_payment {
+                padding: 25px 15px 25px 30px;
+            }
+            .ymaps-2-1-38-copyright {
+                opacity: 0;
+            }
+        </style>        
         <div class="container page">
             <div class="left_menu_nav">
                 <div id="search_bl">
@@ -46,6 +127,15 @@
                                         stroke: #015E27;
                                         stroke-width: 3;
                                     }
+                                    .tab-pane .top_tat_book_bl {
+                                        padding: 0px;
+                                    }
+                                    .top_tat_book_bl .param_list_slide {
+                                        margin-left: -20px;
+                                    }
+                                    .view_list_book {
+                                        margin-right: -20px;
+                                    }
                                 </style>
                                 <g>
                                 <defs>
@@ -75,7 +165,7 @@
                             </a>
                         </li>
                         <li>
-                            <a href="/genres.html" data-container="body" data-toggle="popover" data-placement="right" data-content="Детские  &#10; книги">
+                            <a href="/genres.html" data-container="body" data-toggle="popover" data-placement="right" data-content="Детская  &#10; литература">
                                 <img src="img/4.svg" alt="">
                             </a>
                         </li>
@@ -85,7 +175,7 @@
                             </a>
                         </li>
                         <li>
-                            <a href="/genres.html" data-container="body" data-toggle="popover" data-placement="right" data-content="Классика">
+                            <a href="/genres.html" data-container="body" data-toggle="popover" data-placement="right" data-content="Классическая  &#10; литература">
                                 <img src="img/2.svg" alt="">
                             </a>
                         </li>
@@ -98,30 +188,84 @@
                 </div>
                 <div class="menu_link">
                     <div class="row">
-                        <div class="col-xs-4">
-                            <div class="language_link select-style" style="margin-bottom: 10px;">
-                                <select>
-                                    <option>Татар теле</option>
-                                    <option>Русский</option>
-                                    <option>Tatar latin</option>
-                                    <option>English</option>
-                                </select>
+                        <div class="col-xs-12">
+                            <a href="javascript: void(0);" class="searsh_btn left_btn_menu active" data-container="body" data-toggle="popover" data-placement="right" data-content="Меню">
+                                <svg version="1.1" id="Слой_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                     viewBox="0 0 30 27.8" style="enable-background:new 0 0 30 27.8;" xml:space="preserve">
+                                <style type="text/css">
+                                    .st0 {
+                                        clip-path: url(#SVGID_2_);
+                                        fill: none;
+                                        stroke: #015E27;
+                                        stroke-width: 3;
+                                    }
+                                    .tab-pane .top_tat_book_bl {
+                                        padding: 0px;
+                                    }
+                                    .top_tat_book_bl .param_list_slide {
+                                        margin-left: -20px;
+                                    }
+                                    .view_list_book {
+                                        margin-right: -20px;
+                                    }
+                                </style>
+                                <g>
+                                <defs>
+                                <rect id="SVGID_1_" y="0" width="30" height="27.8"/>
+                                </defs>
+                                <clipPath id="SVGID_2_">
+                                    <use xlink:href="#SVGID_1_"  style="overflow:visible;"/>
+                                </clipPath>
+                                <line class="st0" x1="0" y1="1.5" x2="30" y2="1.5"/>
+                                <line class="st0" x1="0" y1="13.9" x2="30" y2="13.9"/>
+                                <line class="st0" x1="0" y1="26.3" x2="30" y2="26.3"/>
+                                </g>
+                                </svg>
+                            </a>
+
+                            <div class="btn-group">
+                                <a href="#" class="btn header_btn ">Беседы читателей</a>
+                                <a href="#" class="btn header_btn ">События</a>
+                                <a href="#" class="btn header_btn ">Спец проекты</a>
                             </div>
-                            <!--<ul class="language_link">-->
-                            <!--<li class="active"><a href="#">Татар теле</a> </li>-->
-                            <!--<li><a href="#">English</a> </li>-->
-                            <!--<li><a href="#">Русский язык</a> </li>-->
-                            <!--<li><a href="#">Tatar Latin</a> </li>-->
-                            <!--</ul>-->
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-4">
+                                <a class="language_ico" href="javascript: void(0);">
+                                    <img src="img/flag.jpg" alt="">
+                                </a>
+
+                                <div class="language_link param_list_slide" style="margin-bottom: 10px;">
+                                    <div class="btn-group" style="margin-bottom: 0px;">
+                                        <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+                                            <span>Татар теле</span>
+                                        </button>
+                                        <ul class="dropdown-menu list-inline stars_book_option" role="menu">
+                                            <li>
+                                                <span>Татар теле</span>
+                                            </li>
+                                            <li>
+                                                <span>Русский</span>
+                                            </li>
+                                            <li>
+                                                <span>Tatar latin</span>
+                                            </li>
+                                            <li>
+                                                <span>English</span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
                         </div>
                     </div>
                     <div class="row menu_style">
                         <div class="col-xs-2">
                             <ul role="tablist">
-                                <li role="presentation" class="active"><a  href="#nav_1"  role="tab" data-toggle="tab"><img src="img/1.svg" alt=""><span>Учебная литература</span></a> </li>
-                                <li role="presentation"><a  href="#nav_2"  role="tab" data-toggle="tab"><img src="img/2.svg" alt=""><span> Детские книги</span></a> </li>
-                                <li role="presentation"><a  href="#nav_3"  role="tab" data-toggle="tab"><img src="img/3.svg" alt="" style="    margin-top: -5px;"><span>Современная литература</span></a> </li>
-                                <li role="presentation"><a  href="#nav_4"  role="tab" data-toggle="tab"><img src="img/4.svg" alt=""><span>Классика</span></a> </li>
+                                <li role="presentation" class="active"><a  href="#nav_1"  role="tab" data-toggle="tab"><img src="img/3.svg" alt=""><span>Учебная литература</span></a> </li>
+                                <li role="presentation"><a  href="#nav_2"  role="tab" data-toggle="tab"><img src="img/4.svg" alt=""><span> Детские книги</span></a> </li>
+                                <li role="presentation"><a  href="#nav_3"  role="tab" data-toggle="tab"><img src="img/1.svg" alt="" style=""><span>Современная литература</span></a> </li>
+                                <li role="presentation"><a  href="#nav_4"  role="tab" data-toggle="tab"><img src="img/2.svg" alt=""><span>Классика</span></a> </li>
                                 <li role="presentation"><a  href="#nav_5"  role="tab" data-toggle="tab"><img src="img/5.svg" alt=""><span>Интерактивные книги</span></a> </li>
                             </ul>
                         </div>
@@ -602,12 +746,12 @@
                                             <span class="rubl_symbol">&#8399</span>
                                         </span>
                                     </a>
-                                    <a href="#" class="archive_link hidden-xs">Архив</a>
+                                    <a href="#" class="archive_link hidden-xs">История заказов</a>
                                 </div>
                             </div>
                         </div>
-                        <div class="row ">
-                            <div class="col-sm-7 col-xs-12 bl_payment bl_payment_end ">
+                        <div class="row " style="display: flex; align-items: stretch;">
+                            <div class="col-sm-6 col-xs-12 bl_payment bl_payment_end ">
                                 <div class="row">
                                     <div class="col-xs-12">
                                         <h4 class="title_payment">Способ получения</h4>
@@ -635,9 +779,9 @@
                                     <div class="col-sm-3 col-md-2 col-xs-12">
                                         <p class="name_inp">Как</p>
                                     </div>
-                                    <div class="col-sm-9 col-xs-12">
-                                        <ul class="list_radio_btn">
-                                            <li>
+                                    <div class="col-sm-9 col-md-10 col-xs-12">
+                                        <ul class="list_radio_btn uncheckradio">
+                                            <!--<li>
                                                 <input type="radio" class="radio" id="radio_1" name="radio" />
                                                 <label for="radio_1">Пункт самовызова</label>
                                                 <div class="select-style">
@@ -649,16 +793,79 @@
                                                         <option>"Таткнига" ул.Советская, д.6</option>
                                                     </select>
                                                 </div>
-                                            </li>
+                                            </li>-->
+                                                <li>
+                                                    <input type="radio" class="radio" id="radio_2" name="radio" checked='false' />
+                                                    <label for="radio_2">Курьерская служба</label>
+                                                    <p class="price_book">350 <span class="rubl_symbol">&#8399</span></p>
+                                                    <div class="select-style custom-select-style cureer" style="display: none;">
+                                                        <div class="btn-group" style="width: 100%;">
+                                                            <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" style="width: 100%; background: none;"></button>
+                                                            <ul class="dropdown-menu list-inline stars_book_option" role="menu" style="width: 100%;">
+                                                                <li>
+                                                                    <table class="bottom_none">
+                                                                        <tr>
+                                                                            <td>EMS Почта России<br>оплата при получении</td>
+                                                                            <td>14-18 дней</td>
+                                                                            <td>350  <span>&#8399;</span></td>
+                                                                        </tr>
+                                                                    </table>
+                                                                </li>
+                                                                <li>
+                                                                    <table class="bottom_none">
+                                                                        <tr>
+                                                                            <td>EMS Почта России<br>предоплата</td>
+                                                                            <td>14-28 дней</td>
+                                                                            <td>1440  <span>&#8399;</span></td>
+                                                                        </tr>
+                                                                    </table>
+                                                                </li>
+                                                                <li>
+                                                                    <table>
+                                                                        <tr>
+                                                                            <td>СПСР Экспресс</td>
+                                                                            <td>7-9 дней</td>
+                                                                            <td>350 <span>&#8399;</span></td>
+                                                                        </tr>
+                                                                    </table>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </li>
                                             <li>
-                                                <input type="radio" class="radio" id="radio_2" name="radio" />
-                                                <label for="radio_2">Курьерская служба</label>
-                                                <p class="price_book">350 <span class="rubl_symbol">&#8399</span></p>
-
-                                            </li>
-                                            <li>
-                                                <input type="radio" class="radio" id="radio_3" name="radio" />
+                                                <input type="radio" class="radio" id="radio_3" name="radio" checked='false' />
                                                 <label for="radio_3">Почта России</label>
+                                                <p class="price_book">от 150 <span class="rubl_symbol">&#8399</span></p>
+                                                <div class="select-style custom-select-style pochta" style="display: none;">
+                                                    <div class="btn-group" style="width: 100%;">
+                                                        <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" style="width: 100%; background: none;"></button>
+                                                        <ul class="dropdown-menu list-inline stars_book_option" role="menu" style="width: 100%;">
+                                                            <li>
+                                                                <table class="bottom_none">
+                                                                    <tr>
+                                                                        <td>Почта России<br>оплата при получении</td>
+                                                                        <td>14-18 дней</td>
+                                                                        <td>350  <span>&#8399;</span></td>
+                                                                    </tr>
+                                                                </table>
+                                                            </li>
+                                                            <li>
+                                                                <table class="bottom_none">
+                                                                    <tr>
+                                                                        <td>Почта России<br>предоплата</td>
+                                                                        <td>14-28 дней</td>
+                                                                        <td>1440  <span>&#8399;</span></td>
+                                                                    </tr>
+                                                                </table>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <input type="radio" class="radio" id="radio_4" name="radio" checked='false' />
+                                                <label for="radio_4">Самовывоз</label>
                                                 <p class="price_book">150 <span class="rubl_symbol">&#8399</span></p>
                                             </li>
                                         </ul>
@@ -666,37 +873,81 @@
                                 </div>
 
                             </div>
-                            <div class="col-sm-5 col-xs-12 bl_payment bl_payment_end recipient_bl">
+                            <div class="col-sm-6 col-xs-12 bl_payment bl_payment_end recipient_bl">
                                 <div class="col-xs-12">
                                     <h4 class="title_payment">Получатель</h4>
                                 </div>
 
                                 <div class="col-xs-12">
                                     <div class="row list_param">
-                                        <div class="col-sm-5 col-xs-12">
+                                        <div class="col-sm-3 col-xs-12">
                                             <p class="name_inp">Имя</p>
                                         </div>
-                                        <div class="col-sm-7 col-xs-12">
+                                        <div class="col-sm-9 col-xs-12">
                                             <p class="account_inf">Василий</p>
                                         </div>
                                     </div>
                                     <div class="row list_param">
-                                        <div class="col-sm-5 col-xs-12">
+                                        <div class="col-sm-3 col-xs-12">
                                             <p class="name_inp">Эл.почта</p>
                                         </div>
-                                        <div class="col-sm-7 col-xs-12">
+                                        <div class="col-sm-9 col-xs-12">
                                             <p class="account_inf">bz@ya.ru</p>
                                         </div>
                                     </div>
                                     <div class="row list_param">
-                                        <div class="col-sm-5 col-xs-12">
+                                        <div class="col-sm-3 col-xs-12">
                                             <p class="name_inp">Телефон</p>
                                         </div>
-                                        <div class="col-sm-7 col-xs-12">
-                                            <input type="text" class="form-control" placeholder="+7">
+                                        <div class="col-sm-6 col-xs-12">
+                                            <input type="text" class="form-control" placeholder="+7" style="padding: 10px 8px; font-weight: 400; color: #000;">
                                         </div>
                                     </div>
-
+                                    <div class="row list_param cureer pochta">
+                                        <div class="col-sm-3 col-xs-12">
+                                            <p class="name_inp" style="line-height: 1.3em;">Адрес доставки</p>
+                                        </div>
+                                        <div class="col-sm-9 col-xs-12">
+                                            <div class="select-style1">
+                                                <select class="select2">
+                                                    <option>Бойничная, 1</option>
+                                                    <option>Бойничная, 2</option>
+                                                    <option>Бойничная, 3</option>
+                                                    <option>Бойничная, 4</option>
+                                                </select>
+                                            </div>
+                                            <p class="use_my">Использовать сохраненные адреса</p>
+                                            <div class="row address_row" style="margin-bottom: 20px;">
+                                                <div class="col-xs-12 col-sm-8">
+                                                    <div class="save_row item_td">Amir Ivanov<br>Zavoiskogo 10-88<br>Kazan, 420141<br>Russian Federation<br>Тел: 89033433651</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row list_param cureer pochta">
+                                        <div class="col-sm-3 col-xs-12">
+                                            <p class="name_inp" style="line-height: 1.3em;">Комментарий к заказу</p>
+                                        </div>
+                                        <div class="col-sm-9 col-xs-12">
+                                            <textarea class="form-control" style="border-radius: 0px;"></textarea>
+                                        </div>
+                                    </div>
+                                    <div class="row list_param pickup">
+                                        <div class="col-sm-3 col-xs-12">
+                                            <p class="name_inp" style="line-height: 1.3em;">Адрес самовывоза</p>
+                                        </div>
+                                        <div class="col-sm-9 col-xs-12">
+                                            <div class="select-style">
+                                                <select id="pickup_address">
+                                                    <option value="1">Бойничная, 3</option>
+                                                    <option value="2">Бойничная, 4</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row list_param pickup">
+                                        <div id="map" style="width: 100%; height: 400px; padding: 0 15px;"></div>
+                                    </div>
                                 </div>
 
                             </div>
@@ -1070,7 +1321,104 @@
         </div>
     </div>
 </form>
+<script type='text/javascript'>
+    $(function() {
+        $('.uncheckradio .radio').on('click', function() {
+            $('.bl_payment').find('.cureer').hide();
+            $('.bl_payment').find('.pochta').hide();
+            $('.bl_payment').find('.pickup').hide();
+            if($(this).attr('id') == 'radio_2') {
+                $('.bl_payment').find('.cureer').show();
+                setTimeout("$('.custom-select-style.cureer .btn-group').addClass('open');", 100);
+            }
+            if($(this).attr('id') == 'radio_3') {
+                $('.bl_payment').find('.pochta').show();
+                setTimeout("$('.custom-select-style.pochta .btn-group').addClass('open');", 100);
+            }
+            if($(this).attr('id') == 'radio_4') {
+                $('.bl_payment').find('.pickup').show();
+            }
+        });
+        $('.select2').select2();
+        $('.dropdown-menu.stars_book_option li').click(function(){
+            var html = $(this).find('td:eq(0)').html();
+            html = html.replace('<br>', ', ');
+            $(this).closest('.btn-group').find('.btn').html(html);
+        });
+    })
+</script>
+<script type="text/javascript">
+    ymaps.ready(init);
+    var address = [
+        '55.7788,49.1485',
+        '55.7797,49.1487'
+    ];
+    var myMap,
+        fullScreen = false;
+    function init () {
+        myMap = new ymaps.Map('map', {
+            center: [55.755768, 37.617671],
+            zoom: 16,
+            // Карта будет создана без 
+            // элементов управления. 
+            controls: ['fullscreenControl'],
+        });
+        myMap.behaviors.disable("scrollZoom");
+        myMap.controls.add("zoomControl", {
+            float: "none",
+            position: {
+                top: 50,
+                right: 10
+            }
+        });
+        for(var i=0; i < address.length; i++) {
+            var text = $('#pickup_address option:eq('+i+')').text();
+            var pos = address[i];
+            pos = pos.split(',');
+            myPlacemark = new ymaps.Placemark([parseFloat(pos[0]),parseFloat(pos[1])], {
+                hintContent: text,
+                balloonContent: text
+            }, {
+                iconLayout: 'default#image',
+            });
+            myPlacemark.events.add('click', function(e) {
+                var text = e.get('target')['properties'].get('balloonContent');
+                var val = $('#pickup_address option:contains('+text+')').val();
+                $('#pickup_address').val(val);
+            });
+            myMap.geoObjects.add(myPlacemark);
+        }
+        $('#pickup_address').on('change', function() {
+            var index = $(this).find('option:selected').index();
+            var pos = address[index];
+            pos = pos.split(',');
+            myMap.panTo(
+                [parseFloat(pos[0]),parseFloat(pos[1])], {
+                    flying: false
+                }
+            )
+            /*var address = $(this).val();
+            $.ajax({
+                url: "https://geocode-maps.yandex.ru/1.x/?results=1&format=json&geocode=г.Казань,"+address, 
+                dataType: 'json',
+                success: function( data ) {
+                    var pos = data['response']['GeoObjectCollection']['featureMember']['0']['GeoObject']['Point']['pos'];
+                    var text = data['response']['GeoObjectCollection']['featureMember']['0']['GeoObject']['metaDataProperty']['GeocoderMetaData']['text'];
+                    pos = pos.split(' ');
+                    myMap.panTo(
+                        [pos[1], pos[0]], {
+                            flying: true
+                        }
+                    )
+                }
+            });*/
+        });
+        $('#pickup_address').change();
+    }
+</script>
 <script src="custom-ui/custom-ui.js"></script>
+<link href="/js/select2/select2.min.css" rel="stylesheet"/>
+<script src="/js/select2/select2.min.js"></script>
 <link rel="stylesheet" href="custom-ui/custom-ui.css">
     </body>
 </html>

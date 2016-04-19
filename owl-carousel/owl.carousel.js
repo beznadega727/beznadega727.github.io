@@ -556,6 +556,7 @@ if (typeof Object.create !== "function") {
             }
 
             base.currentItem += base.options.scrollPerPage === true ? base.options.items : 1;
+			console.log(base.currentItem+' - '+base.maximumItem);
             if (base.currentItem > base.maximumItem + (base.options.scrollPerPage === true ? (base.options.items - 1) : 0)) {
                 if (base.options.rewindNav === true) {
                     base.currentItem = 0;
@@ -621,7 +622,7 @@ if (typeof Object.create !== "function") {
                 return false;
             }
             goToPixel = base.positionsInArray[position];
-            if(base.$elem.find('.owl-wrapper-outer').length) {
+            if(base.$elem.find('.owl-wrapper-outer').length && base.$elem.find('.owl-wrapper-outer').hasClass('mCustomScrollbar')) {
                 var new_pos = base.getNewPosition();
                 var scroll_el = base.$elem.find('.owl-wrapper').find('.owl-item:eq('+new_pos+')');
                 base.$elem.find('.owl-wrapper-outer').mCustomScrollbar("scrollTo",scroll_el);
@@ -632,18 +633,21 @@ if (typeof Object.create !== "function") {
                 base.isCss3Finish = false;
 
                 if (speed === true) {
+					console.log('1');
                     base.swapSpeed("paginationSpeed");
                     window.setTimeout(function () {
                         base.isCss3Finish = true;
                     }, base.options.paginationSpeed);
 
                 } else if (speed === "rewind") {
+					console.log('2');
                     base.swapSpeed(base.options.rewindSpeed);
                     window.setTimeout(function () {
                         base.isCss3Finish = true;
                     }, base.options.rewindSpeed);
 
                 } else {
+					console.log('3');
                     base.swapSpeed("slideSpeed");
                     window.setTimeout(function () {
                         base.isCss3Finish = true;
