@@ -28,6 +28,11 @@ $(function() {
                 $('.left_btn_menu').click();
             }
         }
+        if($('.language_list:visible').length && $('.language_list').css('opacity') == '1') {
+            if (!$(event.target).closest('.language_list').length && !$(event.target).closest('#language_btn').length) {
+                $('#language_btn').click();
+            }
+        }
         if($('.ava_setting:visible').length) {
             if (!$(event.target).closest('.ava_setting').length && !$(event.target).closest('#ava_btn').length) {
                 $('#close_ava').click();

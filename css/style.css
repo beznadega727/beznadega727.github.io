@@ -3000,7 +3000,7 @@ a.book_library_bl:last-child {
   padding: 0;
   list-style: none;
   margin-left: 0px;
-  height: 196px;
+  height: 216px;
 }
 .tabs_list_literator.owl-carousel {
   margin-top: 0;
@@ -3036,7 +3036,7 @@ a.book_library_bl:last-child {
   width: 100%;
   position: absolute;
   height: 0;
-  z-index: 50;
+  z-index: 14;
 }
 .tabs_list_literator .owl-buttons img {
   width: 16px;
@@ -3050,7 +3050,7 @@ a.book_library_bl:last-child {
   background: none !important;
   float: left;
   margin-left: -35px;
-  margin-top: 30px;
+  margin-top: 40px;
 }
 .tabs_list_literator .owl-buttons .owl-next {
   height: 100%;
@@ -3061,7 +3061,7 @@ a.book_library_bl:last-child {
   background: none !important;
   float: right;
   margin-right: -55px;
-  margin-top: 30px;
+  margin-top: 40px;
 }
 .tabs_list_literator li,
 .tabs_list_literator .item {
@@ -3797,6 +3797,9 @@ h2 .start_article,
 }
 .menu_mob .select-style {
   margin: 10px 0;
+  padding-right: 50px;
+  float: left;
+  width: auto;
   background: transparent url("../img/gray_arrow_select.png") no-repeat 98% 50%;
 }
 .menu_mob .select-style select {
@@ -3804,6 +3807,7 @@ h2 .start_article,
   font-family: "Exo 2", sans-serif;
   font-size: 28px;
   padding: 6px 8px;
+  width: auto;
 }
 .menu_mob .select-style select option {
   color: #364b3e;
@@ -4631,15 +4635,23 @@ h2 .start_article,
   transition-timing-function: cubic-bezier(0, 1.1, 1, 1.1);
   transition-delay: 0s;
 }
+.language_list li:last-child {
+  border-bottom: 1px solid #0b5246;
+}
+.language_list li {
+  border-top: 1px solid #0b5246;
+  border-right: 1px solid #0b5246;
+}
 .language_list li:hover a {
   background-color: #0c6943;
   color: #ffffff;
 }
 .language_list li a {
-  padding: 10px 30px;
+  padding: 5px 20px;
   display: block;
-  margin: 3px 0;
+  margin: 0;
   text-decoration: none!important;
+  font-weight: bold;
 }
 .container_sample p {
   font-size: 18px;
@@ -5766,3 +5778,4 @@ h2 .start_article,
     margin-bottom: 150px;
   }
 }
+/*# sourceMappingURL=style.css.map */

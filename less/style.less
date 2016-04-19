@@ -3203,7 +3203,7 @@ a.book_library_bl:last-child {
     padding: 0;
     list-style: none;
     margin-left: 0px;
-    height: 196px;
+    height: 216px;
     &.owl-carousel {
         margin-top: 0;
         .owl-wrapper-outer {
@@ -3240,7 +3240,7 @@ a.book_library_bl:last-child {
         width: 100%;
         position: absolute;
         height: 0;
-        z-index: 50;
+        z-index: 14;
         img {
             width: 16px;
         }
@@ -3253,7 +3253,7 @@ a.book_library_bl:last-child {
             background: none !important;
             float: left;
             margin-left: -35px;
-            margin-top: 30px;
+            margin-top: 40px;
         }
         .owl-next {
             height: 100%;
@@ -3264,7 +3264,7 @@ a.book_library_bl:last-child {
             background: none !important;
             float: right;
             margin-right: -55px;
-            margin-top: 30px;
+            margin-top: 40px;
         }
     }
     li, .item {
@@ -4046,6 +4046,9 @@ h2, .start_review_head {
     }
     .select-style {
         margin: 10px 0;
+        padding-right: 50px;
+        float: left;
+        width: auto;
         background: transparent url("../img/gray_arrow_select.png") no-repeat 98% 50%;
         select {
             color: #ffffff;
@@ -4053,6 +4056,7 @@ h2, .start_review_head {
             font-family: "Exo 2",sans-serif;
             font-size: 28px;
             padding: 6px 8px;
+            width: auto;
             option {
                 color: #364b3e;
             }
@@ -4957,7 +4961,12 @@ h2, .start_review_head {
         transition-timing-function: cubic-bezier(0, 1.1, 1, 1.1);
         transition-delay: 0s;
     }
+    li:last-child {
+        border-bottom: 1px solid #0b5246;
+    }
     li {
+        border-top: 1px solid #0b5246;
+        border-right: 1px solid #0b5246;
         &:hover {
             a {
                 background-color: #0c6943;
@@ -4965,10 +4974,11 @@ h2, .start_review_head {
             }
         }
         a {
-            padding: 10px 30px;
+            padding: 5px 20px;
             display: block;
-            margin: 3px 0;
+            margin: 0;
             text-decoration: none!important;
+            font-weight: bold;
         }
     }
 }
