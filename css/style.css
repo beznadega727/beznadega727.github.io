@@ -299,7 +299,7 @@ header .container_full {
   margin-left: -500px;
   display: none;
   position: absolute;
-  left: 100px;
+  left: 90px;
   top: 105px;
   z-index: 1;
   /*border-bottom: 1px solid rgba(255, 255, 255, 0.41);*/
@@ -319,8 +319,8 @@ header .container_full {
   min-width: 170px;
   outline: none;
   text-align: left;
-  width: 405px!important;
-  max-width: 405px;
+  width: 430px!important;
+  max-width: 430px;
   border-bottom: 1px solid rgba(255, 255, 255, 0.52);
   /* Firefox 19+ */
   /* Firefox 18- */
