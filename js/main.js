@@ -281,7 +281,7 @@ $(document).ready(function() {
             [500, 2],
             [700, 3],
             [900, 4],
-            [1000, 5],
+            [1200, 5],
             [1400, 5],
         ],
         /*itemsDesktop : [1200,3], //3 items between 1000px and 901px

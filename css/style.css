@@ -2985,13 +2985,16 @@ a.book_library_bl:last-child {
   color: #ffffff;
 }
 .tab_literatur {
-  padding: 35px 0;
+  padding: 35px;
   background-image: -ms-linear-gradient(left, #015E27 0%, #026B4A 20%, #026B4A 50%, #355b5b 75%, #355b5b 100%);
   background-image: -moz-linear-gradient(left, #015E27 0%, #026B4A 20%, #026B4A 50%, #355b5b 75%, #355b5b 100%);
   background-image: -o-linear-gradient(left, #015E27 0%, #026B4A 20%, #026B4A 50%, #355b5b 75%, #355b5b 100%);
   background-image: -webkit-gradient(linear, left top, right top, color-stop(0, #015E27), color-stop(20, #026B4A), color-stop(50, #026B4A), color-stop(75, #355b5b), color-stop(100, #355b5b));
   background-image: -webkit-linear-gradient(left, #015E27 0%, #026B4A 20%, #026B4A 50%, #355b5b 75%, #355b5b 100%);
   background-image: linear-gradient(to right, #015E27 0%, #026B4A 20%, #026B4A 50%, #355b5b 75%, #355b5b 100%);
+}
+.tab_literatur .container {
+  width: 100% !important;
 }
 .tabs_list_literator {
   padding: 0;
