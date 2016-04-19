@@ -706,3 +706,10 @@ $('.menu_style > div:eq(0) a[data-toggle]').on('click', function () {
 $(window).ready(function() {
     $("body").fadeIn(800);
 });
+$(window).resize(function() {
+    if($('.uncheckradio .custom-select-style > .open').length) {
+        var el = $('.uncheckradio .custom-select-style > .open');
+        var height = el.find('ul.dropdown-menu').height();
+        el.css('margin-bottom', height);
+    }
+});

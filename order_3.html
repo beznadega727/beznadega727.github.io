@@ -17,6 +17,9 @@
     </head>
     <body class="animated fadeIn " >
         <style type="text/css">
+            .uncheckradio li .price_book {
+                margin-right: 0px !important;
+            }
             .bl_payment {
                 background: none;
             }
@@ -38,11 +41,15 @@
                 min-width: 110px;
             }
             .bl_payment .stars_book_option li td:nth-child(2) {
-                width: 29%;
+                width: 25%;
+                word-wrap: break-word;
+                word-break: break-all;
             }
             .bl_payment .stars_book_option li td:nth-child(3) {
-                width: 19%;
+                width: 23%;
                 min-width: 37px;
+                word-wrap: break-word;
+                word-break: break-all;
             }
             .bl_payment .stars_book_option li td span {
                 font-family: "PT Sans",serif !important;
@@ -106,6 +113,12 @@
             }
             .pochta > .open {
                 margin-bottom: 120px;
+            }
+            .list_radio_btn label {
+                min-width: auto !important;
+            }
+            .select-style.custom-select-style {
+                margin-right: 30px;
             }
         </style>        
         <div class="container page">
@@ -770,10 +783,10 @@
                                 </div>
 
                                 <div class="row list_param" style="margin-top: 20px;">
-                                    <div class="col-sm-3 col-md-2 col-xs-12">
+                                    <div class="col-md-2 col-xs-12">
                                         <p class="name_inp">Где</p>
                                     </div>
-                                    <div class="col-sm-5 col-xs-12">
+                                    <div class="col-md-5 col-xs-12">
                                         <div class="select-style">
                                             <select>
                                                 <option>Казань</option>
@@ -787,10 +800,10 @@
                                     </div>
                                 </div>
                                 <div class="row list_param" style="margin-top: 20px;">
-                                    <div class="col-sm-3 col-md-2 col-xs-12">
+                                    <div class="col-md-2 col-xs-12">
                                         <p class="name_inp">Как</p>
                                     </div>
-                                    <div class="col-sm-9 col-md-10 col-xs-12">
+                                    <div class="col-md-10 col-xs-12">
                                         <ul class="list_radio_btn uncheckradio">
                                             <!--<li>
                                                 <input type="radio" class="radio" id="radio_1" name="radio" />
@@ -806,9 +819,11 @@
                                                 </div>
                                             </li>-->
                                                 <li>
-                                                    <input type="radio" class="radio" id="radio_2" name="radio" checked='false' />
-                                                    <label for="radio_2">Курьерская служба</label>
-                                                    <p class="price_book custom_price_book">350 <span class="rubl_symbol">&#8399</span></p>
+                                                    <div style="overflow: hidden;">
+                                                        <input type="radio" class="radio" id="radio_2" name="radio" checked='false' />
+                                                        <label for="radio_2">Курьерская служба</label>
+                                                        <p class="price_book custom_price_book">350 <span class="rubl_symbol">&#8399</span></p>
+                                                    </div>
                                                     <div class="select-style custom-select-style cureer" style="display: none;">
                                                         <div class="btn-group" style="width: 100%;">
                                                             <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" style="width: 100%; background: none;"></button>
@@ -817,7 +832,7 @@
                                                                     <table class="bottom_none">
                                                                         <tr>
                                                                             <td>EMS Почта России<br>оплата при получении</td>
-                                                                            <td>14-18 дней</td>
+                                                                            <td>14-18 д</td>
                                                                             <td>350  <span>&#8399;</span></td>
                                                                         </tr>
                                                                     </table>
@@ -826,7 +841,7 @@
                                                                     <table class="bottom_none">
                                                                         <tr>
                                                                             <td>EMS Почта России<br>предоплата</td>
-                                                                            <td>14-28 дней</td>
+                                                                            <td>14-28 д</td>
                                                                             <td>1440  <span>&#8399;</span></td>
                                                                         </tr>
                                                                     </table>
@@ -835,7 +850,7 @@
                                                                     <table>
                                                                         <tr>
                                                                             <td>СПСР Экспресс</td>
-                                                                            <td>7-9 дней</td>
+                                                                            <td>7-9 д</td>
                                                                             <td>350 <span>&#8399;</span></td>
                                                                         </tr>
                                                                     </table>
@@ -845,9 +860,11 @@
                                                     </div>
                                                 </li>
                                             <li>
-                                                <input type="radio" class="radio" id="radio_3" name="radio" checked='false' />
-                                                <label for="radio_3">Почта России</label>
-                                                <p class="price_book custom_price_book">от 150 <span class="rubl_symbol">&#8399</span></p>
+                                                <div style="overflow: hidden;">
+                                                    <input type="radio" class="radio" id="radio_3" name="radio" checked='false' />
+                                                    <label for="radio_3">Почта России</label>
+                                                    <p class="price_book custom_price_book">от 150 <span class="rubl_symbol">&#8399</span></p>
+                                                </div>
                                                 <div class="select-style custom-select-style pochta" style="display: none;">
                                                     <div class="btn-group" style="width: 100%;">
                                                         <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" style="width: 100%; background: none;"></button>
@@ -885,82 +902,84 @@
 
                             </div>
                             <div class="col-sm-6 col-xs-12 bl_payment bl_payment_end recipient_bl">
-                                <div class="col-xs-12">
-                                    <h4 class="title_payment">Получатель</h4>
+                                <div class="row">
+                                    <div class="col-xs-12">
+                                        <h4 class="title_payment">Получатель</h4>
+                                    </div>
                                 </div>
-
-                                <div class="col-xs-12">
-                                    <div class="row list_param">
-                                        <div class="col-sm-3 col-xs-12">
-                                            <p class="name_inp">Имя</p>
-                                        </div>
-                                        <div class="col-sm-9 col-xs-12">
-                                            <p class="account_inf">Василий</p>
-                                        </div>
-                                    </div>
-                                    <div class="row list_param">
-                                        <div class="col-sm-3 col-xs-12">
-                                            <p class="name_inp">Эл.почта</p>
-                                        </div>
-                                        <div class="col-sm-9 col-xs-12">
-                                            <p class="account_inf">bz@ya.ru</p>
-                                        </div>
-                                    </div>
-                                    <div class="row list_param">
-                                        <div class="col-sm-3 col-xs-12">
-                                            <p class="name_inp">Телефон</p>
-                                        </div>
-                                        <div class="col-sm-6 col-xs-12">
-                                            <input type="text" class="form-control" placeholder="+7" style="padding: 10px 8px; font-weight: 400; color: #000;">
-                                        </div>
-                                    </div>
-                                    <div class="row list_param cureer pochta">
-                                        <div class="col-sm-3 col-xs-12">
-                                            <p class="name_inp" style="line-height: 1.3em;">Адрес доставки</p>
-                                        </div>
-                                        <div class="col-sm-9 col-xs-12">
-                                            <div class="select-style1">
-                                                <select class="select2">
-                                                    <option>Бойничная, 1</option>
-                                                    <option>Бойничная, 2</option>
-                                                    <option>Бойничная, 3</option>
-                                                    <option>Бойничная, 4</option>
-                                                </select>
+                                <div class="row">
+                                    <div class="col-xs-12">
+                                        <div class="row list_param">
+                                            <div class="col-md-3 col-xs-12">
+                                                <p class="name_inp">Имя</p>
                                             </div>
-                                            <p class="use_my">Использовать сохраненные адреса</p>
-                                            <div class="row address_row" style="margin-bottom: 20px;">
-                                                <div class="col-xs-12 col-sm-8">
-                                                    <div class="save_row item_td">Amir Ivanov<br>Zavoiskogo 10-88<br>Kazan, 420141<br>Russian Federation<br>Тел: 89033433651</div>
+                                            <div class="col-md-9 col-xs-12">
+                                                <p class="account_inf">Василий</p>
+                                            </div>
+                                        </div>
+                                        <div class="row list_param">
+                                            <div class="col-md-3 col-xs-12">
+                                                <p class="name_inp">Эл.почта</p>
+                                            </div>
+                                            <div class="col-md-9 col-xs-12">
+                                                <p class="account_inf">bz@ya.ru</p>
+                                            </div>
+                                        </div>
+                                        <div class="row list_param">
+                                            <div class="col-md-3 col-xs-12">
+                                                <p class="name_inp">Телефон</p>
+                                            </div>
+                                            <div class="col-md-6 col-xs-12">
+                                                <input type="text" class="form-control" placeholder="+7" style="padding: 10px 8px; font-weight: 400; color: #000;">
+                                            </div>
+                                        </div>
+                                        <div class="row list_param cureer pochta">
+                                            <div class="col-md-3 col-xs-12">
+                                                <p class="name_inp" style="line-height: 1.3em;">Адрес доставки</p>
+                                            </div>
+                                            <div class="col-md-9 col-xs-12">
+                                                <div class="select-style1">
+                                                    <select class="select2">
+                                                        <option>Бойничная, 1</option>
+                                                        <option>Бойничная, 2</option>
+                                                        <option>Бойничная, 3</option>
+                                                        <option>Бойничная, 4</option>
+                                                    </select>
+                                                </div>
+                                                <p class="use_my">Использовать сохраненные адреса</p>
+                                                <div class="row address_row" style="margin-bottom: 20px;">
+                                                    <div class="col-xs-12 col-sm-8">
+                                                        <div class="save_row item_td">Amir Ivanov<br>Zavoiskogo 10-88<br>Kazan, 420141<br>Russian Federation<br>Тел: 89033433651</div>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
-                                    </div>
-                                    <div class="row list_param cureer pochta">
-                                        <div class="col-sm-3 col-xs-12">
-                                            <p class="name_inp" style="line-height: 1.3em;">Комментарий к заказу</p>
-                                        </div>
-                                        <div class="col-sm-9 col-xs-12">
-                                            <textarea class="form-control" style="border-radius: 0px;"></textarea>
-                                        </div>
-                                    </div>
-                                    <div class="row list_param pickup">
-                                        <div class="col-sm-3 col-xs-12">
-                                            <p class="name_inp" style="line-height: 1.3em;">Адрес самовывоза</p>
-                                        </div>
-                                        <div class="col-sm-9 col-xs-12">
-                                            <div class="select-style">
-                                                <select id="pickup_address">
-                                                    <option value="1">Бойничная, 3</option>
-                                                    <option value="2">Бойничная, 4</option>
-                                                </select>
+                                        <div class="row list_param cureer pochta">
+                                            <div class="col-md-3 col-xs-12">
+                                                <p class="name_inp" style="line-height: 1.3em;">Комментарий к заказу</p>
+                                            </div>
+                                            <div class="col-md-9 col-xs-12">
+                                                <textarea class="form-control" style="border-radius: 0px;"></textarea>
                                             </div>
                                         </div>
-                                    </div>
-                                    <div class="row list_param pickup">
-                                        <div id="map" style="width: 100%; height: 400px; padding: 0 15px;"></div>
+                                        <div class="row list_param pickup">
+                                            <div class="col-md-3 col-xs-12">
+                                                <p class="name_inp" style="line-height: 1.3em;">Адрес самовывоза</p>
+                                            </div>
+                                            <div class="col-md-9 col-xs-12">
+                                                <div class="select-style">
+                                                    <select id="pickup_address">
+                                                        <option value="1">Бойничная, 3</option>
+                                                        <option value="2">Бойничная, 4</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row list_param pickup">
+                                            <div id="map" style="width: 100%; height: 400px; padding: 0 15px;"></div>
+                                        </div>
                                     </div>
                                 </div>
-
                             </div>
                         </div>
                         <!--<div class="row top_tat_book_bl">
@@ -1333,6 +1352,13 @@
     </div>
 </form>
 <script type='text/javascript'>
+    function margincustom() {
+        if($('.uncheckradio .custom-select-style > .open').length) {
+            var el = $('.uncheckradio .custom-select-style > .open');
+            var height = el.find('ul.dropdown-menu').height();
+            el.css('margin-bottom', height);
+        }
+    }
     $(function() {
         $('.uncheckradio .radio').on('click', function() {
             $('.bl_payment').find('.cureer').hide();
@@ -1340,11 +1366,11 @@
             $('.bl_payment').find('.pickup').hide();
             if($(this).attr('id') == 'radio_2') {
                 $('.bl_payment').find('.cureer').show();
-                setTimeout("$('.custom-select-style.cureer .btn-group').addClass('open');", 100);
+                setTimeout("$('.custom-select-style.cureer .btn-group').addClass('open');margincustom()", 100);
             }
             if($(this).attr('id') == 'radio_3') {
                 $('.bl_payment').find('.pochta').show();
-                setTimeout("$('.custom-select-style.pochta .btn-group').addClass('open');", 100);
+                setTimeout("$('.custom-select-style.pochta .btn-group').addClass('open');margincustom()", 100);
             }
             if($(this).attr('id') == 'radio_4') {
                 $('.bl_payment').find('.pickup').show();
@@ -1355,6 +1381,7 @@
             var html = $(this).find('td:eq(0)').html();
             html = html.replace('<br>', ', ');
             $(this).closest('.btn-group').find('.btn').html(html);
+            $('.uncheckradio .custom-select-style .btn-group').css('margin-bottom', '0px');
         });
     })
 </script>
