@@ -295,8 +295,8 @@ $(document).ready(function() {
 //            nav:true,
         navigation: true,
         navigationText: [
-            "<a class='btn_left'><img src='img/arrow_slide_left.png'></a>",
-            "<a class='btn_right'><img src='img/arrow_slide_right.png'></a>"
+            "<a class='btn_left'><img src='img/arrow_slide_left_new.png'></a>",
+            "<a class='btn_right'><img src='img/arrow_slide_right_new.png'></a>"
         ],
         /*beforeInit : function(elem){
             //Parameter elem pointing to $("#owl-demo")
