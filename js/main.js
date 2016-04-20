@@ -264,8 +264,8 @@ $(document).ready(function() {
         itemsDesktopSmall : [900,2], // betweem 900px and 501px
         itemsTablet: [500,1], //1 items between 500 and 0
         itemsMobile : false, // itemsMobile disabled - inherit from itemsTablet option*/
-        touchDrag: false,
-        mouseDrag: false,
+        touchDrag: true,
+        mouseDrag: true,
         loop:true,
         margin: 0,
 //            nav:true,
