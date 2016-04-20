@@ -375,12 +375,14 @@ $(".carousel").carousel({
     $(window).load(function(){
         $.mCustomScrollbar.defaults.scrollButtons.enable=true; //enable scrolling buttons by default
         $.mCustomScrollbar.defaults.axis="yx"; //enable 2 axis scrollbars by default
-        $("#carousel_scroll .owl-wrapper-outer, .carousel_scroll .owl-wrapper-outer").mCustomScrollbar({
-            scrollInertia:400,
-            scrollbarPosition: "outside",
-            axis:"x", // horizontal scrollbar
-            mouseWheel:{ enable: false },
-        });
+        if(window.innerWidth > 450) {
+            $("#carousel_scroll .owl-wrapper-outer, .carousel_scroll .owl-wrapper-outer").mCustomScrollbar({
+                scrollInertia:400,
+                scrollbarPosition: "outside",
+                axis:"x", // horizontal scrollbar
+                mouseWheel:{ enable: false },
+            });
+        }
     });
 })(jQuery);
 
