@@ -4669,13 +4669,82 @@ h2, .start_review_head {
         background: url("../img/krest_ico.png")no-repeat center!important;
     }
 }
-
+.collapse_order {
+    padding: 20px 0 100px;
+    background-color: #d6e6e3;
+    .param_list_slide .select-style {
+        background: #d6e6e3 url("../img/gray_arrow_select.png") no-repeat 91% 50%;
+        width: 275px;
+    }
+    .panel {
+        border: 2px solid #80ae93;
+        background-color: #d6e6e3;
+        float: left;
+        width: 100%;
+        overflow: hidden;
+        -webkit-border-radius: 13px;
+        -moz-border-radius: 13px;
+        border-radius: 13px;;
+    }
+    .panel-group {
+        margin-bottom: -2px;
+        z-index: 1;
+        position: relative;
+    }
+    .btn {
+        padding: 5px 20px;
+    }
+    .book_review_bl {
+        background-color: #e5eee9;
+    }
+    .orders_result {
+        padding-top: 30px;
+    }
+    .panel-heading {
+        border-bottom: 2px solid #80ae93;
+        background-color: #d6e6e3;
+        float: left;
+        width: 100%;
+        margin-bottom: -2px;
+        z-index: 1;
+        position: relative;
+        span {
+            font-size: 20px;
+            font-family: Roboto, sans-serif;
+            font-weight: 100;
+        }
+        .status_orders {
+            position: relative;
+            padding-left: 20px;
+            &:after {
+                content: "";
+                position: absolute;
+                left: 0;
+                top: 3px;
+                bottom: 0;
+                margin: auto 0;
+                height: 15px;
+                width: 15px;
+                background-color: #4dde74;
+                -webkit-border-radius: 50%;
+                -moz-border-radius: 50%;
+                border-radius: 50%;
+            }
+        }
+    }
+}
+.arrow_collapse {
+    border: 17px solid transparent;
+    border-top: 14px solid #b7b8ba;
+    float: right;
+    margin-top: 9px;
+    margin-bottom: -10px;
+}
 .stitches-sprite(@x: 0, @y: 0, @width: 0, @height: 0) {
     background-position: @x @y;
     width: @width;
     height: @height;
 }
-
 .view_book_sprite {
     background-image: url("../img/view_book_btn.png");
     background-repeat: no-repeat;
