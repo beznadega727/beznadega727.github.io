@@ -2437,10 +2437,19 @@ select::-ms-expand {
         display: none;
     }
 }
-.vers_status {
+.vers_status, .itog_vers_table td {
     color: #000000;
     font-size: 18px;
     font-weight: 400;
+    vertical-align: top;
+    line-height: 1.3em;
+}
+.itog_vers_table {
+    width: 100%;
+    margin-bottom: 10px;
+    td:first-child {
+        width: 70%;
+    }
 }
 .arrow_box {
     position: relative;
@@ -4908,7 +4917,7 @@ h2, .start_review_head {
     margin-bottom: 19px;
     li {
         display: inline-block;
-        padding: 6px 0px;
+        padding: 0px;
         &.active {
             a {
                 text-decoration: none!important;
@@ -4925,6 +4934,7 @@ h2, .start_review_head {
             }
         }
         a {
+            display: block;
             -webkit-border-radius: 3px;
             -moz-border-radius: 3px;
             border-radius: 3px;;
@@ -5694,8 +5704,21 @@ h2, .start_review_head {
         float: none;
         width: 100%;
         overflow: hidden;
+        padding-top: 19px;
+        .sortirov_bl {
+            padding-left: 0px;
+        }
         ul.btn-group {
             float: left;
+        }
+    }
+    .main_ctl_genres {
+        .top_tat_book_bl {
+            .param_list_slide {
+                li {
+                    margin-bottom: 0px !important;
+                }
+            }
         }
     }
 }
