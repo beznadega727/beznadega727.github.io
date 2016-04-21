@@ -749,7 +749,7 @@ header .padd_content > .row:first-child > div:first-child {
 }
 .nav_link_header li {
   display: inline-block;
-  margin-left: 20px;
+  margin-left: 19px;
   line-height: 40px;
   float: left;
   position: relative;
@@ -3742,6 +3742,9 @@ h2 .start_article,
   right: -22px;
   background-size: 65% 100%;
 }
+.popup-form {
+  min-width: 340px !important;
+}
 .popup-form .form-control {
   border: 1px solid transparent;
   border-bottom: 1px solid #abc9b8;
@@ -4796,6 +4799,9 @@ h2 .start_article,
   .deferred_book_btn {
     margin: 0 -20px !important;
     overflow: hidden;
+  }
+  .book_review_bl.book_review_bl_review div.col-sm-5 div.col-lg-5 {
+    padding: 0px;
   }
   .book_review_bl .price_book_ord {
     width: 100%;
@@ -5938,4 +5944,3 @@ h2 .start_article,
   background: #015e27;
   color: #fff;
 }
-/*# sourceMappingURL=style.css.map */

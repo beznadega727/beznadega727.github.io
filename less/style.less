@@ -792,7 +792,7 @@ header .padd_content {
     /*margin-bottom: 25px;*/
     li {
         display: inline-block;
-        margin-left: 20px;
+        margin-left: 19px;
         line-height: 40px;
         float: left;
         position: relative;
@@ -3970,6 +3970,7 @@ h2, .start_review_head {
     }
 }
 .popup-form {
+    min-width: 340px !important;
    .form-control {
        border: 1px solid transparent;
        border-bottom: 1px solid #abc9b8;
@@ -5116,6 +5117,13 @@ h2, .start_review_head {
         overflow: hidden;
     }
     .book_review_bl {
+        &.book_review_bl_review {
+            div.col-sm-5 {
+                div.col-lg-5 {
+                    padding: 0px;
+                }
+            }
+        }
         .price_book_ord {
             width: 100%;
             text-align: left;
