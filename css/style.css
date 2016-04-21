@@ -4417,6 +4417,9 @@ h2 .start_article,
   z-index: 1;
   position: relative;
 }
+.collapse_order .panel-heading > div {
+  padding: 0px;
+}
 .collapse_order .panel-heading span {
   font-size: 20px;
   font-family: Roboto, sans-serif;
@@ -4425,14 +4428,15 @@ h2 .start_article,
 .collapse_order .panel-heading .status_orders {
   position: relative;
   padding-left: 20px;
+  color: #000;
 }
 .collapse_order .panel-heading .status_orders:after {
   content: "";
   position: absolute;
   left: 0;
-  top: 3px;
+  top: 5px;
   bottom: 0;
-  margin: auto 0;
+  margin: 0;
   height: 15px;
   width: 15px;
   background-color: #4dde74;
