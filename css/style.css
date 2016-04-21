@@ -4423,12 +4423,12 @@ h2 .start_article,
 .collapse_order .panel-heading span {
   font-size: 20px;
   font-family: Roboto, sans-serif;
-  font-weight: 100;
+  font-weight: 500;
+  color: #000;
 }
 .collapse_order .panel-heading .status_orders {
   position: relative;
   padding-left: 20px;
-  color: #000;
 }
 .collapse_order .panel-heading .status_orders:after {
   content: "";
