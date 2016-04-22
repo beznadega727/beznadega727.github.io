@@ -5962,3 +5962,13 @@ h2 .start_article,
   background: #015e27;
   color: #fff;
 }
+.name_inp_custom {
+  line-height: 1.3em;
+  padding: 13px 0;
+}
+@media screen and (min-width: 970px) and (max-width: 1650px) {
+  .name_inp_custom {
+    padding: 0;
+  }
+}
+/*# sourceMappingURL=style.css.map */
