@@ -3765,6 +3765,12 @@ h2 .start_article,
   -moz-border-radius: 0;
   border-radius: 0;
 }
+.menu_visible {
+  height: 100%;
+  overflow: hidden;
+  width: 100%;
+  position: fixed;
+}
 .menu_visible .popover.fade.right.in {
   display: none !important;
 }
@@ -3809,6 +3815,7 @@ h2 .start_article,
   overflow-y: auto;
   padding: 252px 0 70px;
   z-index: 12;
+  -webkit-overflow-scrolling: touch;
 }
 .menu_mob .mobil_menu {
   display: none;
@@ -5287,7 +5294,6 @@ h2 .start_article,
     margin: 23px 0 13px !important;
   }
   .bl_opis_book_mob {
-    background-color: #ffffff;
     /*margin-bottom: -25px;*/
     margin-top: 33px;
   }
@@ -5351,6 +5357,7 @@ h2 .start_article,
     font-size: 15px;
   }
   .tab_literatur {
+    -webkit-overflow-scrolling: touch;
     overflow-x: auto;
     overflow-y: hidden;
     padding: 35px;
@@ -5971,4 +5978,3 @@ h2 .start_article,
     padding: 0;
   }
 }
-/*# sourceMappingURL=style.css.map */

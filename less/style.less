@@ -3992,6 +3992,10 @@ h2, .start_review_head {
    }
 }
 .menu_visible {
+    height: 100%;
+    overflow: hidden;
+    width: 100%;
+    position: fixed;
     .popover.fade.right.in {
         display: none !important;
     }
@@ -4040,6 +4044,7 @@ h2, .start_review_head {
     overflow-y: auto;
     padding: 252px 0 70px;
     z-index: 12;
+    -webkit-overflow-scrolling: touch;
     //box-shadow: 5px 0 21px 4px rgba(37, 37, 37, 0.52);
     .mobil_menu {
         display: none;
@@ -5730,8 +5735,8 @@ h2, .start_review_head {
         margin: 23px 0 13px !important;
     }
     .bl_opis_book_mob {
-        background-color: #ffffff;
-        /*margin-bottom: -25px;*/
+        //background-color: #ffffff;
+        /*margin-bottom: -25px;*/   
         margin-top: 33px;
         .col-xs-12 {
             .col-xs-12 {
@@ -5841,6 +5846,7 @@ h2, .start_review_head {
         }
     }
     .tab_literatur {
+        -webkit-overflow-scrolling: touch;
         overflow-x: auto;
         overflow-y: hidden;
         padding: 35px;
