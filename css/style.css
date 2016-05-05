@@ -1041,6 +1041,9 @@ footer h4 {
   height: 29px;
   left: 18px;
 }
+.carousel_slide_top .carousel-control.right_left {
+  right: 20%;
+}
 .carousel_slide_top .item {
   overflow: hidden;
 }
@@ -1104,6 +1107,18 @@ footer h4 {
   line-height: 28px;
   font-size: 19px;
   font-weight: 300;
+}
+.slider_grid .item:hover h1 {
+  color: #ff7610;
+}
+.slider_grid .item:after {
+  content: "";
+  background-color: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
 }
 .slider_grid .item img {
   width: 99.9%;
