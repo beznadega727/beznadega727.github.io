@@ -469,6 +469,7 @@ var LitresReaderSite;
             }
         };
         LitresSite.prototype.showTrialEnd = function (ID) {
+			return '';
             if (LitresURLParser.PartID == 458582) {
                 return '';
             }
