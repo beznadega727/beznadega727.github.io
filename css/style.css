@@ -1046,6 +1046,7 @@ footer h4 {
 }
 .carousel_slide_top .item {
   overflow: hidden;
+  max-height: 1031px;
 }
 .carousel_slide_top .item img {
   min-width: 800px;
