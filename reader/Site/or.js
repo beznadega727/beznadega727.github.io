@@ -485,11 +485,12 @@ var LitresReaderSite;
                     'вы можете запросить у библиотекаря полную версию книги и продолжить чтение.';
                 buttonText = 'Запросить книгу у библиотекаря';
             }
+			// убрал кнопку trial
             return '<hr class="tag_empty-line" id="' + ID + '_0"/>' +
                 '<div id="' + ID + '_1">' +
                 '<p id="' + ID + '_1_0">' + text + '</p>' +
                 '<hr class="tag_empty-line" id="' + ID + '_1_1"/>' +
-                '<a id="' + ID + '_1_2" href="" class="litreslink noload trial-button">' + buttonText + '</a>' +
+                '<a id="' + ID + '_1_2" href="" class="litreslink noload trial-button1">' + buttonText + '</a>' +
                 '</div>';
         };
         LitresSite.prototype.addTrialHandlers = function () {

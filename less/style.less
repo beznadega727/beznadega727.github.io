@@ -58,6 +58,71 @@ header {
         max-width: 100%;
     }
 }
+.author_content {
+    .nav_history_list, .nav_history_list2 {
+        margin: 25px 0 -30px 0;
+    }
+    //.book_lite .param_list_slide {
+    //    margin-top: 0;
+    //}
+    .tab-pane .top_tat_book_bl {
+        margin: 8px 5px 30px;
+    }
+}
+.item_authors {
+    text-align: center;
+    margin: 0 0 60px;
+        img {
+            width: 100%;
+        }
+    &.hidden_ajax_grid {
+        display: none;
+    }
+    &.author {
+        &_online {
+            .img_book {
+                &:after {
+                    content: "";
+                    position: absolute;
+                    left: 10px;
+                    top: 10px;
+                    height: 15px;
+                    width: 15px;
+                    background-color: #4dde74;
+                    -webkit-border-radius:50%;
+                    -moz-border-radius:50%;
+                    border-radius:50%;
+                }
+            }
+        }
+        &_offline {
+            .img_book {
+                &:after {
+                    content: "";
+                    position: absolute;
+                    left: 10px;
+                    top: 10px;
+                    height: 15px;
+                    width: 15px;
+                    background-color: #e55746;
+                    -webkit-border-radius:50%;
+                    -moz-border-radius:50%;
+                    border-radius:50%;
+                }
+            }
+        }
+    }
+    .name_author {
+        font-size: 30px;
+        font-family: "Exo 2", sans-serif;
+        color: #000c08;
+        text-align: center;
+    }
+    .btn {
+        width: 90%;
+        padding: 10px 0;
+    }
+}
 .logo_bl {
     z-index: 15;
     margin-left: -70px;
@@ -1057,9 +1122,13 @@ footer {
             left: 18px;
         }
     }
-    .item { 
-        overflow: hidden;
-        img {
+    .carousel-control.right_left {
+        right: 20%;
+    }
+        .item {
+            overflow: hidden;
+            max-height: 1031px;
+            img {
             min-width: 800px;
             width: 100% !important;
             float: right;
@@ -1124,6 +1193,20 @@ footer {
         }
     }
     .item {
+        &:hover {
+            h1 {
+                    color: #ff7610;
+            }
+        }
+        &:after {
+            content: "";
+            background-color: rgba(0, 0, 0, 0.5);
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+        }
         img {
             width: 99.9%;
         }
@@ -5609,6 +5692,11 @@ h2, .start_review_head {
             }
         }
     }
+    .item_authors {
+        border: 1px solid #a5c7b7;
+        padding: 0 0 45px;
+        border-radius: 5px;
+    }
 }
 @media screen and (max-width: 516px) {
     .top_tat_book_bl {
@@ -5904,7 +5992,7 @@ h2, .start_review_head {
     .param_list_slide {
         width: 100%;
         .select-style {
-            background: #D5E7F4  url("../img/gray_arrow_select.png") no-repeat 95% 50%;
+            background: #D5E7F4  url("../img/gray_arrow_select.png") no-repeat 96% 50%!important;
         }
         li {
 
