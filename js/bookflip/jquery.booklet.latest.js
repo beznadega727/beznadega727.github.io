@@ -77,6 +77,7 @@
                 obj = new Booklet($(this), config);
                 obj.init();
 
+                window.mybook = obj;
                 return this; // preserve chaining on main function
             });
         }
@@ -1084,7 +1085,6 @@
             },
             updatePercentageSize = function () {
                 if (!isDisabled) {
-                    console.log('c');
                     // recalculate size for percentage values, called with window is resized
                     if (wPercent) {
                         options.width = (wOrig.replace('%', '') / 100) * parseFloat(target.parent().css('width'));
