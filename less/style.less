@@ -5568,6 +5568,7 @@ h2, .start_review_head {
         float: none;
     }
 }
+
 .mobile_header_citate {
     margin-top: 23px; 
     margin-bottom: 13px;
@@ -5781,6 +5782,7 @@ h2, .start_review_head {
         border-radius: 5px;
     }
 }
+
 @media screen and (max-width: 516px) {
     .top_tat_book_bl {
         &.top_tat_book_bl_adap {
@@ -5792,6 +5794,7 @@ h2, .start_review_head {
         }
     }
 }
+
 .bl_opis_book_mob {
     .col-xs-12 {
         .col-sm-10 {
@@ -6201,6 +6204,13 @@ h2, .start_review_head {
 }
 @media screen and (max-width: 500px) {
     .menu_mob {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .menu_mob {
+        width: 100%;
         padding: 65px 0 70px 0;
         .menu_accord li a {
             height: auto;
@@ -6242,6 +6252,9 @@ h2, .start_review_head {
         }
     }
 }
+
+
+
 .owl-theme .owl-controls {
     margin-top: 0px !important;
     .owl-page span {
@@ -6849,4 +6862,57 @@ h2, .start_review_head {
 }
 
 //end Стили к странцие faq
+
+
+
+
+//Кастомизация меню под планшет в вертикальной ориентации
+
+@media screen and (min-width: 500px) and (max-width: 1200px) {
+    .slider_grid:nth-child(2n+1) {
+        border-top: 14px solid #f4f8f7;
+        border-left: 0;
+        border-right: 7px solid #f4f8f7;
+        border-bottom: 0;
+    }
+    .slider_grid:nth-child(2n) {
+        border-top: 14px solid #f4f8f7;
+        border-right: 0;
+        border-left: 7px solid #f4f8f7;
+        border-bottom: 0;
+    }
+    .menu_mob {
+        width: 340px;
+        padding: 65px 0 70px 30px;
+        * {
+            font-size: 15px!important;
+        }
+        ul:nth-child(1) li {
+            text-align: inherit!important;
+        }
+        .menu_accord {
+            li {
+                a {
+                    .name_menu_accord {
+                        height: auto;
+                    }
+                }
+            }
+        }
+        .select-style select {
+            height: 38px;
+        }
+        .mobil_menu {
+            ul {
+                li {
+                    .btn {
+                        padding: 8px 10px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+//Кастомизация меню под планшет в вертикальной ориентации
 

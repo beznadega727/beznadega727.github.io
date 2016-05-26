@@ -5663,6 +5663,12 @@ h2 .start_article,
 }
 @media screen and (max-width: 500px) {
   .menu_mob {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 500px) {
+  .menu_mob {
+    width: 100%;
     padding: 65px 0 70px 0;
   }
   .menu_mob .menu_accord li a {
@@ -6266,4 +6272,37 @@ h2 .start_article,
 }
 .faq-list ul li.active a:after {
   background: url("../img/arrow_menu_new.png") no-repeat top right;
+}
+@media screen and (min-width: 500px) and (max-width: 1200px) {
+  .slider_grid:nth-child(2n+1) {
+    border-top: 14px solid #f4f8f7;
+    border-left: 0;
+    border-right: 7px solid #f4f8f7;
+    border-bottom: 0;
+  }
+  .slider_grid:nth-child(2n) {
+    border-top: 14px solid #f4f8f7;
+    border-right: 0;
+    border-left: 7px solid #f4f8f7;
+    border-bottom: 0;
+  }
+  .menu_mob {
+    width: 340px;
+    padding: 65px 0 70px 30px;
+  }
+  .menu_mob * {
+    font-size: 15px!important;
+  }
+  .menu_mob ul:nth-child(1) li {
+    text-align: inherit!important;
+  }
+  .menu_mob .menu_accord li a .name_menu_accord {
+    height: auto;
+  }
+  .menu_mob .select-style select {
+    height: 38px;
+  }
+  .menu_mob .mobil_menu ul li .btn {
+    padding: 8px 10px;
+  }
 }
